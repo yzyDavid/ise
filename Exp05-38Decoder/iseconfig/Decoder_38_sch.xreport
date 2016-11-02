@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-02T15:33:39</DateModified>
+  <DateModified>2016-11-02T16:05:12</DateModified>
   <ModuleName>HCT138_sch</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-11-02T15:51:25</SummaryTimeStamp>
   <SavedFilePath>/home/yzy/ise/Exp05-38Decoder/iseconfig/Decoder_38_sch.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/yzy/ise/Exp05-38Decoder</ImplementationReportsDirectory>
   <DateInitialized>2016-11-02T15:26:20</DateInitialized>

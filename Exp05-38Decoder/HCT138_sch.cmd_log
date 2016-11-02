@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "/home/yzy/ise/Exp05-38Decoder/HCT138_sch.xst" -ofn "/home/yzy/ise/Exp05-38Decoder/HCT138_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-2L HCT138_sch.ngc HCT138_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o HCT138_sch_map.ncd HCT138_sch.ngd HCT138_sch.pcf 
+par -w -intstyle ise -ol high -mt off HCT138_sch_map.ncd HCT138_sch.ncd HCT138_sch.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml HCT138_sch.twx HCT138_sch.ncd -o HCT138_sch.twr HCT138_sch.pcf 
+xst -intstyle ise -ifn "/home/yzy/ise/Exp05-38Decoder/HCT138_sch.xst" -ofn "/home/yzy/ise/Exp05-38Decoder/HCT138_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-2L HCT138_sch.ngc HCT138_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o HCT138_sch_map.ncd HCT138_sch.ngd HCT138_sch.pcf 
+par -w -intstyle ise -ol high -mt off HCT138_sch_map.ncd HCT138_sch.ncd HCT138_sch.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml HCT138_sch.twx HCT138_sch.ncd -o HCT138_sch.twr HCT138_sch.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-2L HCT138_sch.ngc HCT138_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o HCT138_sch_map.ncd HCT138_sch.ngd HCT138_sch.pcf 
+par -w -intstyle ise -ol high -mt off HCT138_sch_map.ncd HCT138_sch.ncd HCT138_sch.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml HCT138_sch.twx HCT138_sch.ncd -o HCT138_sch.twr HCT138_sch.pcf 
+bitgen -intstyle ise -f HCT138_sch.ut HCT138_sch.ncd 
+xst -intstyle ise -ifn "/home/yzy/ise/Exp05-38Decoder/HCT138_sch.xst" -ofn "/home/yzy/ise/Exp05-38Decoder/HCT138_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc codes/HCT138.ucf -p xc7k160t-ffg676-2L HCT138_sch.ngc HCT138_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o HCT138_sch_map.ncd HCT138_sch.ngd HCT138_sch.pcf 
+par -w -intstyle ise -ol high -mt off HCT138_sch_map.ncd HCT138_sch.ncd HCT138_sch.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml HCT138_sch.twx HCT138_sch.ncd -o HCT138_sch.twr HCT138_sch.pcf 
+bitgen -intstyle ise -f HCT138_sch.ut HCT138_sch.ncd 

@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Decoder_38_sch.vf
-// /___/   /\     Timestamp : 11/02/2016 15:23:28
+// /___/   /\     Timestamp : 11/02/2016 15:43:59
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -intstyle ise -family kintex7 -verilog Decoder_38_sch.vf -w /home/yzy/ise/Exp05-38Decoder/codes/Decoder_38_sch.sch
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog /home/yzy/ise/Exp05-38Decoder/Decoder_38_sch.vf -w /home/yzy/ise/Exp05-38Decoder/codes/Decoder_38_sch.sch
 //Design Name: Decoder_38_sch
 //Device: kintex7
 //Purpose:

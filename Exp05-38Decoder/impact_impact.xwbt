@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/yzy/ise/Exp05-38Decoder/impact.xsl
+OUTFILE=/home/yzy/ise/Exp05-38Decoder/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/yzy/ise/Exp05-38Decoder
+LICENSE=iMPACT
+USER_INFO=iMPACT
