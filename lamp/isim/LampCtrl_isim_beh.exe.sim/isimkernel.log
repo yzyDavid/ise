@@ -1,0 +1,28 @@
+Command line:
+   LampCtrl_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54783
+
+Tue Nov  1 21:45:44 2016
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 196.145 Meg
+
+ Total Signals          : 54
+ Total Nets             : 25
+ Total Signal Drivers   : 14
+ Total Blocks           : 11
+ Total Primitive Blocks : 10
+ Total Processes        : 15
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 105
+
+ Total Simulation Time: 0.02 sec
+
+ Current Memory Usage: 271.647 Meg
+
+Tue Nov  1 21:45:47 2016
+

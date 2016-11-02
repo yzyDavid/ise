@@ -1,0 +1,18 @@
+sch2hdl -intstyle ise -family artix7 -verilog LampCtrl_drc.vf -w /home/yzy/ise/lamp/LampCtrl.sch 
+sch2hdl -intstyle ise -family artix7 -verilog LampCtrl.vf -w /home/yzy/ise/lamp/LampCtrl.sch 
+xst -intstyle ise -ifn "/home/yzy/ise/lamp/LampCtrl.xst" -ofn "/home/yzy/ise/lamp/LampCtrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 LampCtrl.ngc LampCtrl.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_map.ncd LampCtrl.ngd LampCtrl.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl_map.ncd LampCtrl.ncd LampCtrl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LampCtrl.twx LampCtrl.ncd -o LampCtrl.twr LampCtrl.pcf 
+xst -intstyle ise -ifn "/home/yzy/ise/lamp/LampCtrl.xst" -ofn "/home/yzy/ise/lamp/LampCtrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 LampCtrl.ngc LampCtrl.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_map.ncd LampCtrl.ngd LampCtrl.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl_map.ncd LampCtrl.ncd LampCtrl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LampCtrl.twx LampCtrl.ncd -o LampCtrl.twr LampCtrl.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim LampCtrl.ngc LampCtrl_synthesis.v 
+sch2sym -intstyle ise -family artix7 -refsym LampCtrl /home/yzy/ise/lamp/LampCtrl.sch /home/yzy/ise/lamp/LampCtrl.sym 
+xst -intstyle ise -ifn "/home/yzy/ise/lamp/LampCtrl.xst" -ofn "/home/yzy/ise/lamp/LampCtrl.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim LampCtrl.ngc LampCtrl_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7a100t-csg324-3 LampCtrl.ngc LampCtrl.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_map.ncd LampCtrl.ngd LampCtrl.pcf 
