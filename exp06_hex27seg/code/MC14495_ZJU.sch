@@ -259,6 +259,70 @@
             <blockpin name="I2" />
             <blockpin name="O" />
         </block>
+        <block symbolname="or3" name="XLXI_61">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and3" name="XLXI_62">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and4" name="XLXI_63">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="I3" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and3" name="XLXI_64">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and3" name="XLXI_65">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="or4" name="XLXI_66">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="I3" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="or3" name="XLXI_67">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and3" name="XLXI_68">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and4" name="XLXI_69">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="I3" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and4" name="XLXI_70">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="I3" />
+            <blockpin name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
         <instance x="208" y="480" name="XLXI_1" orien="R90" />
@@ -460,5 +524,15 @@
         <instance x="4384" y="1120" name="XLXI_58" orien="R90" />
         <instance x="4512" y="1120" name="XLXI_59" orien="R90" />
         <instance x="4688" y="1120" name="XLXI_60" orien="R90" />
+        <instance x="4512" y="1408" name="XLXI_61" orien="R90" />
+        <instance x="4896" y="1120" name="XLXI_62" orien="R90" />
+        <instance x="5072" y="1120" name="XLXI_64" orien="R90" />
+        <instance x="5248" y="1120" name="XLXI_65" orien="R90" />
+        <instance x="5424" y="1120" name="XLXI_63" orien="R90" />
+        <instance x="5136" y="1408" name="XLXI_66" orien="R90" />
+        <instance x="5696" y="1120" name="XLXI_68" orien="R90" />
+        <instance x="5872" y="1120" name="XLXI_69" orien="R90" />
+        <instance x="6112" y="1120" name="XLXI_70" orien="R90" />
+        <instance x="5904" y="1408" name="XLXI_67" orien="R90" />
     </sheet>
 </drawing>
