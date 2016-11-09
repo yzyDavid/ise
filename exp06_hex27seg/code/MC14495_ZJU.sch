@@ -90,6 +90,16 @@
             <arc ex="112" ey="-176" sx="192" sy="-128" r="88" cx="116" cy="-88" />
             <line x2="48" y1="-176" y2="-176" x1="112" />
         </blockdef>
+        <blockdef name="and2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="192" y1="-96" y2="-96" x1="256" />
+            <arc ex="144" ey="-144" sx="144" sy="-48" r="48" cx="144" cy="-96" />
+            <line x2="64" y1="-48" y2="-48" x1="144" />
+            <line x2="144" y1="-144" y2="-144" x1="64" />
+            <line x2="64" y1="-48" y2="-144" x1="64" />
+        </blockdef>
         <block symbolname="inv" name="XLXI_1">
             <blockpin signalname="D3" name="I" />
             <blockpin signalname="XLXN_22" name="O" />
@@ -230,6 +240,23 @@
             <blockpin name="I1" />
             <blockpin name="I2" />
             <blockpin name="I3" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_58">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and3" name="XLXI_59">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and3" name="XLXI_60">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
             <blockpin name="O" />
         </block>
     </netlist>
@@ -430,5 +457,8 @@
         <instance x="3920" y="1120" name="XLXI_54" orien="R90" />
         <instance x="4096" y="1120" name="XLXI_56" orien="R90" />
         <instance x="3792" y="1408" name="XLXI_57" orien="R90" />
+        <instance x="4384" y="1120" name="XLXI_58" orien="R90" />
+        <instance x="4512" y="1120" name="XLXI_59" orien="R90" />
+        <instance x="4688" y="1120" name="XLXI_60" orien="R90" />
     </sheet>
 </drawing>
