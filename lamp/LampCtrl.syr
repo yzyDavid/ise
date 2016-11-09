@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: LampCtrl.prj
@@ -49,7 +49,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "LampCtrl"
 Output Format                      : NGC
-Target Device                      : xc7a100t-3-csg324
+Target Device                      : xc7k160t-2L-ffg676
 
 ---- Source Options
 Top Module Name                    : LampCtrl
@@ -124,7 +124,6 @@ Elaborating module <INV>.
 Elaborating module <OR4>.
 
 Elaborating module <VCC>.
-WARNING:HDLCompiler:1127 - "/home/yzy/ise/lamp/LampCtrl.vf" Line 75: Assignment to XLXN_18 ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -195,19 +194,19 @@ Primitive and Black Box Usage:
 #      INV                         : 4
 #      OR4                         : 1
 #      VCC                         : 1
-# IO Buffers                       : 5
+# IO Buffers                       : 12
 #      IBUF                        : 3
-#      OBUF                        : 2
+#      OBUF                        : 9
 
 Device utilization summary:
 ---------------------------
 
-Selected Device : 7a100tcsg324-3 
+Selected Device : 7k160tffg676-2l 
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    4  out of  63400     0%  
-    Number used as Logic:                 4  out of  63400     0%  
+ Number of Slice LUTs:                    4  out of  101400     0%  
+    Number used as Logic:                 4  out of  101400     0%  
 
 Slice Logic Distribution: 
  Number of LUT Flip Flop pairs used:      4
@@ -217,8 +216,8 @@ Slice Logic Distribution:
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                           5
- Number of bonded IOBs:                   5  out of    210     2%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    400     3%  
 
 Specific Feature Utilization:
 
@@ -248,12 +247,12 @@ No asynchronous control signals found in this design
 
 Timing Summary:
 ---------------
-Speed Grade: -3
+Speed Grade: -2
 
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 3.455ns
+   Maximum combinational path delay: 2.981ns
 
 Timing Details:
 ---------------
@@ -263,7 +262,7 @@ All values displayed in nanoseconds (ns)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 12 / 1
 -------------------------------------------------------------------------
-Delay:               3.455ns (Levels of Logic = 6)
+Delay:               2.981ns (Levels of Logic = 6)
   Source:            S2 (PAD)
   Destination:       F (PAD)
 
@@ -271,15 +270,15 @@ Delay:               3.455ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   0.001   0.289  S2_IBUF (S2_IBUF)
-     INV:I->O              2   0.511   0.688  INV_2 (NS2)
-     AND3:I1->O            1   0.107   0.511  AND3_1 (S1NS2NS3)
-     OR4:I3->O             1   0.279   0.279  OR4_1 (NF)
-     INV:I->O              1   0.511   0.279  INV_4 (F_OBUF)
+     IBUF:I->O             3   0.000   0.351  S2_IBUF (S2_IBUF)
+     INV:I->O              2   0.317   0.608  INV_2 (NS2)
+     AND3:I1->O            1   0.053   0.495  AND3_1 (S1NS2NS3)
+     OR4:I3->O             1   0.161   0.339  OR4_1 (NF)
+     INV:I->O              1   0.317   0.339  INV_4 (F_OBUF)
      OBUF:I->O                 0.000          F_OBUF (F)
     ----------------------------------------
-    Total                      3.455ns (1.409ns logic, 2.046ns route)
-                                       (40.8% logic, 59.2% route)
+    Total                      2.981ns (0.848ns logic, 2.133ns route)
+                                       (28.4% logic, 71.6% route)
 
 =========================================================================
 
@@ -290,14 +289,14 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.17 secs
+Total CPU time to Xst completion: 6.21 secs
  
 --> 
 
 
-Total memory usage is 493876 kilobytes
+Total memory usage is 493348 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

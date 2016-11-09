@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/yzy/ise/lamp/LampCtrl.ncd
+OUTFILE=/home/yzy/ise/lamp/LampCtrl.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lffg676
+WORKINGDIR=/home/yzy/ise/lamp
+LICENSE=ISE
+USER_INFO=_

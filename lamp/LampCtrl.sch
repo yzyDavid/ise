@@ -19,12 +19,20 @@
         <signal name="NF" />
         <signal name="F" />
         <signal name="Buzzer" />
-        <signal name="XLXN_18" />
+        <signal name="LED(0:6)" />
+        <signal name="LED(0)" />
+        <signal name="LED(1)" />
+        <signal name="LED(2)" />
+        <signal name="LED(3)" />
+        <signal name="LED(4)" />
+        <signal name="LED(5)" />
+        <signal name="LED(6)" />
         <port polarity="Input" name="S1" />
         <port polarity="Input" name="S2" />
         <port polarity="Input" name="S3" />
         <port polarity="Output" name="F" />
         <port polarity="Output" name="Buzzer" />
+        <port polarity="Output" name="LED(0:6)" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -117,25 +125,25 @@
             <blockpin signalname="Buzzer" name="P" />
         </block>
         <block symbolname="vcc" name="XLXI_2">
-            <blockpin signalname="XLXN_18" name="P" />
+            <blockpin signalname="LED(0)" name="P" />
         </block>
         <block symbolname="vcc" name="XLXI_3">
-            <blockpin name="P" />
+            <blockpin signalname="LED(1)" name="P" />
         </block>
         <block symbolname="vcc" name="XLXI_4">
-            <blockpin name="P" />
+            <blockpin signalname="LED(2)" name="P" />
         </block>
         <block symbolname="vcc" name="XLXI_5">
-            <blockpin name="P" />
+            <blockpin signalname="LED(3)" name="P" />
         </block>
         <block symbolname="vcc" name="XLXI_6">
-            <blockpin name="P" />
+            <blockpin signalname="LED(4)" name="P" />
         </block>
         <block symbolname="vcc" name="XLXI_7">
-            <blockpin name="P" />
+            <blockpin signalname="LED(5)" name="P" />
         </block>
         <block symbolname="vcc" name="XLXI_8">
-            <blockpin name="P" />
+            <blockpin signalname="LED(6)" name="P" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -264,8 +272,44 @@
             <wire x2="1280" y1="1600" y2="1600" x1="592" />
         </branch>
         <iomarker fontsize="28" x="1280" y="1600" name="Buzzer" orien="R0" />
-        <branch name="XLXN_18">
-            <wire x2="592" y1="1824" y2="2000" x1="592" />
+        <branch name="LED(0:6)">
+            <wire x2="592" y1="2080" y2="2080" x1="560" />
+            <wire x2="672" y1="2080" y2="2080" x1="592" />
+            <wire x2="752" y1="2080" y2="2080" x1="672" />
+            <wire x2="832" y1="2080" y2="2080" x1="752" />
+            <wire x2="912" y1="2080" y2="2080" x1="832" />
+            <wire x2="992" y1="2080" y2="2080" x1="912" />
+            <wire x2="1072" y1="2080" y2="2080" x1="992" />
+            <wire x2="1600" y1="2080" y2="2080" x1="1072" />
+        </branch>
+        <iomarker fontsize="28" x="1600" y="2080" name="LED(0:6)" orien="R0" />
+        <bustap x2="592" y1="2080" y2="1984" x1="592" />
+        <bustap x2="672" y1="2080" y2="1984" x1="672" />
+        <bustap x2="752" y1="2080" y2="1984" x1="752" />
+        <bustap x2="832" y1="2080" y2="1984" x1="832" />
+        <bustap x2="912" y1="2080" y2="1984" x1="912" />
+        <bustap x2="992" y1="2080" y2="1984" x1="992" />
+        <bustap x2="1072" y1="2080" y2="1984" x1="1072" />
+        <branch name="LED(0)">
+            <wire x2="592" y1="1824" y2="1984" x1="592" />
+        </branch>
+        <branch name="LED(1)">
+            <wire x2="672" y1="1824" y2="1984" x1="672" />
+        </branch>
+        <branch name="LED(2)">
+            <wire x2="752" y1="1824" y2="1984" x1="752" />
+        </branch>
+        <branch name="LED(3)">
+            <wire x2="832" y1="1824" y2="1984" x1="832" />
+        </branch>
+        <branch name="LED(4)">
+            <wire x2="912" y1="1824" y2="1984" x1="912" />
+        </branch>
+        <branch name="LED(5)">
+            <wire x2="992" y1="1824" y2="1984" x1="992" />
+        </branch>
+        <branch name="LED(6)">
+            <wire x2="1072" y1="1824" y2="1984" x1="1072" />
         </branch>
     </sheet>
 </drawing>

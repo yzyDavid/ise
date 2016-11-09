@@ -4,7 +4,7 @@ run
 -ifn LampCtrl.prj
 -ofn LampCtrl
 -ofmt NGC
--p xc7a100t-3-csg324
+-p xc7k160t-2L-ffg676
 -top LampCtrl
 -opt_mode Speed
 -opt_level 1

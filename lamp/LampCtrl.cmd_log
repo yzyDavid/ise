@@ -16,3 +16,20 @@ xst -intstyle ise -ifn "/home/yzy/ise/lamp/LampCtrl.xst" -ofn "/home/yzy/ise/lam
 netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim LampCtrl.ngc LampCtrl_synthesis.v 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7a100t-csg324-3 LampCtrl.ngc LampCtrl.ngd  
 map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_map.ncd LampCtrl.ngd LampCtrl.pcf 
+xst -intstyle ise -ifn "/home/yzy/ise/lamp/LampCtrl.xst" -ofn "/home/yzy/ise/lamp/LampCtrl.syr" 
+xst -intstyle ise -ifn "/home/yzy/ise/lamp/LampCtrl.xst" -ofn "/home/yzy/ise/lamp/LampCtrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7a100t-csg324-3 LampCtrl.ngc LampCtrl.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_map.ncd LampCtrl.ngd LampCtrl.pcf 
+xst -intstyle ise -ifn "/home/yzy/ise/lamp/LampCtrl.xst" -ofn "/home/yzy/ise/lamp/LampCtrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-2L LampCtrl.ngc LampCtrl.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_map.ncd LampCtrl.ngd LampCtrl.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl_map.ncd LampCtrl.ncd LampCtrl.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml LampCtrl.twx LampCtrl.ncd -o LampCtrl.twr LampCtrl.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f LampCtrl.ut LampCtrl.ncd 
+xst -intstyle ise -ifn "/home/yzy/ise/lamp/LampCtrl.xst" -ofn "/home/yzy/ise/lamp/LampCtrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-2L LampCtrl.ngc LampCtrl.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl_map.ncd LampCtrl.ngd LampCtrl.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl_map.ncd LampCtrl.ncd LampCtrl.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml LampCtrl.twx LampCtrl.ncd -o LampCtrl.twr LampCtrl.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f LampCtrl.ut LampCtrl.ncd 
+sch2verilog -intstyle ise -family kintex7 -tionly {} -tiext tfi -w /home/yzy/ise/lamp/LampCtrl.sch LampCtrl.tfi 

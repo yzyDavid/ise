@@ -5,22 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="LIT" num="701" delta="new" ><arg fmt="%s" index="1">PAD symbol &quot;Buzzer&quot;</arg> has an undefined IOSTANDARD.
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
-<msg type="warning" file="LIT" num="702" delta="new" ><arg fmt="%s" index="1">PAD symbol &quot;Buzzer&quot;</arg> is not constrained (LOC) to a specific location.
+<msg type="info" file="Pack" num="1716" delta="old" >Initializing temperature to <arg fmt="%0.3f" index="1">100.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">100.000</arg> Celsius)
 </msg>
 
-<msg type="error" file="MapLib" num="30" delta="new" ><arg fmt="%s" index="1">LOC</arg> constraint <arg fmt="%s" index="2">AA10</arg> on <arg fmt="%s" index="3">S1</arg> is invalid: <arg fmt="%z" index="4">No such site on the device.</arg> To bypass this error set the environment variable &apos;XIL_MAP_LOCWARN&apos;.
+<msg type="info" file="Pack" num="1720" delta="old" >Initializing voltage to <arg fmt="%0.3f" index="1">0.970</arg> Volts. (default - Range: <arg fmt="%0.3f" index="2">0.970</arg> to <arg fmt="%0.3f" index="3">1.030</arg> Volts)
 </msg>
 
-<msg type="error" file="MapLib" num="30" delta="new" ><arg fmt="%s" index="1">LOC</arg> constraint <arg fmt="%s" index="2">AB10</arg> on <arg fmt="%s" index="3">S2</arg> is invalid: <arg fmt="%z" index="4">No such site on the device.</arg> To bypass this error set the environment variable &apos;XIL_MAP_LOCWARN&apos;.
+<msg type="info" file="Map" num="215" delta="old" >The Interim Design Summary has been generated in the MAP Report (.mrp).
 </msg>
 
-<msg type="error" file="MapLib" num="30" delta="new" ><arg fmt="%s" index="1">LOC</arg> constraint <arg fmt="%s" index="2">AA13</arg> on <arg fmt="%s" index="3">S3</arg> is invalid: <arg fmt="%z" index="4">No such site on the device.</arg> To bypass this error set the environment variable &apos;XIL_MAP_LOCWARN&apos;.
-</msg>
-
-<msg type="error" file="MapLib" num="30" delta="new" ><arg fmt="%s" index="1">LOC</arg> constraint <arg fmt="%s" index="2">AB26</arg> on <arg fmt="%s" index="3">F</arg> is invalid: <arg fmt="%z" index="4">No such site on the device.</arg> To bypass this error set the environment variable &apos;XIL_MAP_LOCWARN&apos;.
+<msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
 </msg>
 
 </messages>

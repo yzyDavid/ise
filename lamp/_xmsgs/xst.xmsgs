@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/yzy/ise/lamp/LampCtrl.vf" Line 75: Assignment to <arg fmt="%s" index="1">XLXN_18</arg> ignored, since the identifier is never used
-</msg>
-
 </messages>
 
