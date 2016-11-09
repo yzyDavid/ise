@@ -198,6 +198,40 @@
             <blockpin signalname="D1" name="I2" />
             <blockpin signalname="XLXN_32" name="O" />
         </block>
+        <block symbolname="and4" name="XLXI_53">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="I3" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and3" name="XLXI_54">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and4" name="XLXI_55">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="I3" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="and4" name="XLXI_56">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="I3" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="or4" name="XLXI_57">
+            <blockpin name="I0" />
+            <blockpin name="I1" />
+            <blockpin name="I2" />
+            <blockpin name="I3" />
+            <blockpin name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
         <instance x="208" y="480" name="XLXI_1" orien="R90" />
@@ -391,5 +425,10 @@
             <wire x2="3360" y1="1408" y2="1408" x1="3248" />
             <wire x2="3360" y1="1376" y2="1408" x1="3360" />
         </branch>
+        <instance x="3440" y="1120" name="XLXI_53" orien="R90" />
+        <instance x="3680" y="1120" name="XLXI_55" orien="R90" />
+        <instance x="3920" y="1120" name="XLXI_54" orien="R90" />
+        <instance x="4096" y="1120" name="XLXI_56" orien="R90" />
+        <instance x="3792" y="1408" name="XLXI_57" orien="R90" />
     </sheet>
 </drawing>
