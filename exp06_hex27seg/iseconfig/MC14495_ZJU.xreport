@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-09T14:11:04</DateModified>
+  <DateModified>2016-11-09T16:02:10</DateModified>
   <ModuleName>MC14495_ZJU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/yzy/ise/exp06_hex27seg/iseconfig/MC14495_ZJU.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/yzy/ise/exp06_hex27seg</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/yzy/ise/exp06_hex27seg/</ImplementationReportsDirectory>
   <DateInitialized>2016-11-09T14:11:04</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
