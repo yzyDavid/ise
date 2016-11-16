@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/yzy/ise/Hex427Seg/dispsync.v -lang verilog -prj Hex427Seg -o dispsync.spl -module dispsync -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 dispsync.spl /home/yzy/ise/Hex427Seg/dispsync.sym 

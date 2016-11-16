@@ -22,7 +22,10 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Hex427Seg.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MC14495_ZJU.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="clkdiv.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="clkdiv.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="dispsync.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="dispsync.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="dispsync.xst"/>

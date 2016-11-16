@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym MC14495_ZJU /home/yzy/ise/Hex427Seg/code/MC14495_ZJU.sch /home/yzy/ise/Hex427Seg/MC14495_ZJU.sym 
