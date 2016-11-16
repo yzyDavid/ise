@@ -31,11 +31,16 @@
         <signal name="SEGMENT(4)" />
         <signal name="SEGMENT(5)" />
         <signal name="SEGMENT(6)" />
+        <signal name="V5" />
+        <signal name="G0" />
+        <signal name="G0,V5,G0,G0,G0,G0,V5,V5,G0,G0,V5,G0,G0,G0,G0,V5" />
+        <signal name="Buzzer" />
         <port polarity="Output" name="SEGMENT(7:0)" />
         <port polarity="Input" name="RSTN" />
         <port polarity="Input" name="clk_100mhz" />
         <port polarity="Input" name="SW(7:0)" />
         <port polarity="Output" name="AN(3:0)" />
+        <port polarity="Output" name="Buzzer" />
         <blockdef name="MC14495_ZJU">
             <timestamp>2016-11-16T17:58:29</timestamp>
             <rect width="256" x="64" y="-512" height="512" />
@@ -89,6 +94,29 @@
             <line x2="64" y1="0" y2="-64" x1="64" />
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
+        <blockdef name="vcc">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-64" x1="64" />
+            <line x2="64" y1="0" y2="-32" x1="64" />
+            <line x2="32" y1="-64" y2="-64" x1="96" />
+        </blockdef>
+        <blockdef name="gnd">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-96" x1="64" />
+            <line x2="52" y1="-48" y2="-48" x1="76" />
+            <line x2="60" y1="-32" y2="-32" x1="68" />
+            <line x2="40" y1="-64" y2="-64" x1="88" />
+            <line x2="64" y1="-64" y2="-80" x1="64" />
+            <line x2="64" y1="-128" y2="-96" x1="64" />
+        </blockdef>
+        <blockdef name="buf">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="128" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="0" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="-64" x1="128" />
+            <line x2="64" y1="-64" y2="0" x1="64" />
+        </blockdef>
         <block symbolname="MC14495_ZJU" name="XLXI_1">
             <blockpin signalname="Hex(3)" name="D3" />
             <blockpin signalname="Hex(2)" name="D2" />
@@ -111,7 +139,7 @@
             <blockpin signalname="XLXN_6(31:0)" name="clkdiv(31:0)" />
         </block>
         <block symbolname="dispsync" name="XLXI_3">
-            <blockpin name="Hexs(15:0)" />
+            <blockpin signalname="G0,V5,G0,G0,G0,G0,V5,V5,G0,G0,V5,G0,G0,G0,G0,V5" name="Hexs(15:0)" />
             <blockpin signalname="XLXN_7(1:0)" name="Scan(1:0)" />
             <blockpin signalname="XLXN_9(3:0)" name="point(3:0)" />
             <blockpin signalname="SW(7:4)" name="blink(3:0)" />
@@ -123,6 +151,16 @@
         <block symbolname="inv" name="XLXI_4">
             <blockpin signalname="RSTN" name="I" />
             <blockpin signalname="XLXN_3" name="O" />
+        </block>
+        <block symbolname="vcc" name="XLXI_5">
+            <blockpin signalname="V5" name="P" />
+        </block>
+        <block symbolname="gnd" name="XLXI_6">
+            <blockpin signalname="G0" name="G" />
+        </block>
+        <block symbolname="buf" name="XLXI_7">
+            <blockpin signalname="V5" name="I" />
+            <blockpin signalname="Buzzer" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -274,5 +312,32 @@
             <wire x2="2288" y1="720" y2="720" x1="2240" />
             <wire x2="2544" y1="720" y2="720" x1="2288" />
         </branch>
+        <instance x="2976" y="304" name="XLXI_5" orien="R0" />
+        <instance x="2976" y="688" name="XLXI_6" orien="R0" />
+        <branch name="V5">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3200" y="400" type="branch" />
+            <wire x2="3040" y1="304" y2="400" x1="3040" />
+            <wire x2="3200" y1="400" y2="400" x1="3040" />
+        </branch>
+        <branch name="G0">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3200" y="480" type="branch" />
+            <wire x2="3200" y1="480" y2="480" x1="3040" />
+            <wire x2="3040" y1="480" y2="560" x1="3040" />
+        </branch>
+        <branch name="G0,V5,G0,G0,G0,G0,V5,V5,G0,G0,V5,G0,G0,G0,G0,V5">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="560" y="880" type="branch" />
+            <wire x2="640" y1="560" y2="560" x1="400" />
+            <wire x2="400" y1="560" y2="880" x1="400" />
+            <wire x2="560" y1="880" y2="880" x1="400" />
+        </branch>
+        <instance x="2976" y="832" name="XLXI_7" orien="R0" />
+        <branch name="V5">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2880" y="800" type="branch" />
+            <wire x2="2976" y1="800" y2="800" x1="2880" />
+        </branch>
+        <branch name="Buzzer">
+            <wire x2="3280" y1="800" y2="800" x1="3200" />
+        </branch>
+        <iomarker fontsize="28" x="3280" y="800" name="Buzzer" orien="R0" />
     </sheet>
 </drawing>
