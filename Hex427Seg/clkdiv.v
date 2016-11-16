@@ -24,7 +24,7 @@ module clkdiv(input clk,
     );
 	 always @ (posedge clk or posedge rst) begin
 		if (rst) clkdiv <= 0;
-		else clkdiv <= clidiv + 1'b1;
+		else clkdiv <= clkdiv + 1'b1;
 	end
 
 endmodule

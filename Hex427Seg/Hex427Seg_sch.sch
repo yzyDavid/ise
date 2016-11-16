@@ -10,13 +10,13 @@
         <signal name="XLXN_3" />
         <signal name="RSTN" />
         <signal name="clk_100mhz" />
-        <signal name="XLXN_6(31:0)" />
-        <signal name="XLXN_7(1:0)" />
+        <signal name="clkdiv(31:0)" />
+        <signal name="clkdiv(8:7)" />
         <signal name="SW(7:0)" />
-        <signal name="XLXN_9(3:0)" />
+        <signal name="SW(3:0)" />
         <signal name="SW(7:4)" />
         <signal name="AN(3:0)" />
-        <signal name="XLXN_1(3:0)" />
+        <signal name="Hex(3:0)" />
         <signal name="Hex(3)" />
         <signal name="Hex(2)" />
         <signal name="Hex(1)" />
@@ -136,16 +136,16 @@
         <block symbolname="clkdiv" name="XLXI_2">
             <blockpin signalname="clk_100mhz" name="clk" />
             <blockpin signalname="XLXN_3" name="rst" />
-            <blockpin signalname="XLXN_6(31:0)" name="clkdiv(31:0)" />
+            <blockpin signalname="clkdiv(31:0)" name="clkdiv(31:0)" />
         </block>
         <block symbolname="dispsync" name="XLXI_3">
             <blockpin signalname="G0,V5,G0,G0,G0,G0,V5,V5,G0,G0,V5,G0,G0,G0,G0,V5" name="Hexs(15:0)" />
-            <blockpin signalname="XLXN_7(1:0)" name="Scan(1:0)" />
-            <blockpin signalname="XLXN_9(3:0)" name="point(3:0)" />
+            <blockpin signalname="clkdiv(8:7)" name="Scan(1:0)" />
+            <blockpin signalname="SW(3:0)" name="point(3:0)" />
             <blockpin signalname="SW(7:4)" name="blink(3:0)" />
             <blockpin signalname="XLXN_17" name="p" />
             <blockpin signalname="XLXN_18" name="LE" />
-            <blockpin signalname="XLXN_1(3:0)" name="Hex(3:0)" />
+            <blockpin signalname="Hex(3:0)" name="Hex(3:0)" />
             <blockpin signalname="AN(3:0)" name="AN(3:0)" />
         </block>
         <block symbolname="inv" name="XLXI_4">
@@ -193,14 +193,14 @@
             <wire x2="624" y1="240" y2="240" x1="208" />
             <wire x2="640" y1="240" y2="240" x1="624" />
         </branch>
-        <branch name="XLXN_6(31:0)">
+        <branch name="clkdiv(31:0)">
             <wire x2="1120" y1="416" y2="416" x1="480" />
             <wire x2="480" y1="416" y2="624" x1="480" />
             <wire x2="1120" y1="240" y2="240" x1="1024" />
             <wire x2="1120" y1="240" y2="416" x1="1120" />
         </branch>
         <bustap x2="576" y1="624" y2="624" x1="480" />
-        <branch name="XLXN_7(1:0)">
+        <branch name="clkdiv(8:7)">
             <wire x2="640" y1="624" y2="624" x1="576" />
         </branch>
         <iomarker fontsize="28" x="208" y="240" name="clk_100mhz" orien="R180" />
@@ -212,7 +212,7 @@
         <iomarker fontsize="28" x="320" y="688" name="SW(7:0)" orien="R180" />
         <bustap x2="576" y1="688" y2="688" x1="480" />
         <bustap x2="576" y1="752" y2="752" x1="480" />
-        <branch name="XLXN_9(3:0)">
+        <branch name="SW(3:0)">
             <wire x2="640" y1="688" y2="688" x1="576" />
         </branch>
         <branch name="SW(7:4)">
@@ -222,7 +222,7 @@
             <wire x2="1120" y1="752" y2="752" x1="1024" />
         </branch>
         <iomarker fontsize="28" x="1120" y="752" name="AN(3:0)" orien="R0" />
-        <branch name="XLXN_1(3:0)">
+        <branch name="Hex(3:0)">
             <wire x2="1440" y1="688" y2="688" x1="1024" />
             <wire x2="1440" y1="272" y2="352" x1="1440" />
             <wire x2="1440" y1="352" y2="432" x1="1440" />
