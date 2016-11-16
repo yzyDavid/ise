@@ -22,10 +22,23 @@
         <signal name="SEGMENT(4)" />
         <signal name="SEGMENT(5)" />
         <signal name="SEGMENT(6)" />
+        <signal name="XLXN_18" />
+        <signal name="Buzzer" />
+        <signal name="AN(3:0)" />
+        <signal name="SW(7)" />
+        <signal name="SW(6)" />
+        <signal name="SW(5)" />
+        <signal name="SW(4)" />
+        <signal name="AN(3)" />
+        <signal name="AN(2)" />
+        <signal name="AN(1)" />
+        <signal name="AN(0)" />
         <port polarity="Input" name="SW(7:0)" />
         <port polarity="Input" name="POINT" />
         <port polarity="Input" name="LE" />
         <port polarity="Output" name="SEGMENT(7:0)" />
+        <port polarity="Output" name="Buzzer" />
+        <port polarity="Output" name="AN(3:0)" />
         <blockdef name="MC14495_ZJU">
             <timestamp>2016-11-16T13:35:4</timestamp>
             <rect width="256" x="64" y="-512" height="512" />
@@ -44,6 +57,47 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
+        <blockdef name="vcc">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-64" x1="64" />
+            <line x2="64" y1="0" y2="-32" x1="64" />
+            <line x2="32" y1="-64" y2="-64" x1="96" />
+        </blockdef>
+        <blockdef name="buf">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="128" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="0" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="-64" x1="128" />
+            <line x2="64" y1="-64" y2="0" x1="64" />
+        </blockdef>
+        <blockdef name="inv4">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="160" y1="-32" y2="-32" x1="224" />
+            <line x2="160" y1="-96" y2="-96" x1="224" />
+            <line x2="160" y1="-160" y2="-160" x1="224" />
+            <line x2="160" y1="-224" y2="-224" x1="224" />
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="64" y1="-96" y2="-96" x1="0" />
+            <line x2="64" y1="-160" y2="-160" x1="0" />
+            <line x2="64" y1="-224" y2="-224" x1="0" />
+            <line x2="128" y1="-256" y2="-224" x1="64" />
+            <line x2="64" y1="-224" y2="-192" x1="128" />
+            <line x2="64" y1="-192" y2="-256" x1="64" />
+            <circle r="16" cx="144" cy="-32" />
+            <line x2="128" y1="-64" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="0" x1="128" />
+            <line x2="64" y1="0" y2="-64" x1="64" />
+            <line x2="128" y1="-128" y2="-96" x1="64" />
+            <line x2="64" y1="-96" y2="-64" x1="128" />
+            <line x2="64" y1="-64" y2="-128" x1="64" />
+            <circle r="16" cx="144" cy="-96" />
+            <line x2="128" y1="-192" y2="-160" x1="64" />
+            <line x2="64" y1="-160" y2="-128" x1="128" />
+            <line x2="64" y1="-128" y2="-192" x1="64" />
+            <circle r="16" cx="144" cy="-160" />
+            <circle r="16" cx="144" cy="-224" />
+        </blockdef>
         <block symbolname="MC14495_ZJU" name="M1">
             <blockpin signalname="SW(3)" name="D3" />
             <blockpin signalname="SW(2)" name="D2" />
@@ -60,6 +114,23 @@
             <blockpin signalname="SEGMENT(5)" name="F" />
             <blockpin signalname="SEGMENT(6)" name="G" />
         </block>
+        <block symbolname="vcc" name="XLXI_2">
+            <blockpin signalname="XLXN_18" name="P" />
+        </block>
+        <block symbolname="buf" name="XLXI_3">
+            <blockpin signalname="XLXN_18" name="I" />
+            <blockpin signalname="Buzzer" name="O" />
+        </block>
+        <block symbolname="inv4" name="XLXI_4">
+            <blockpin signalname="SW(4)" name="I0" />
+            <blockpin signalname="SW(5)" name="I1" />
+            <blockpin signalname="SW(6)" name="I2" />
+            <blockpin signalname="SW(7)" name="I3" />
+            <blockpin signalname="AN(0)" name="O0" />
+            <blockpin signalname="AN(1)" name="O1" />
+            <blockpin signalname="AN(2)" name="O2" />
+            <blockpin signalname="AN(3)" name="O3" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="896" y="832" name="M1" orien="R0">
@@ -69,7 +140,11 @@
             <wire x2="640" y1="352" y2="432" x1="640" />
             <wire x2="640" y1="432" y2="512" x1="640" />
             <wire x2="640" y1="512" y2="592" x1="640" />
-            <wire x2="640" y1="592" y2="1600" x1="640" />
+            <wire x2="640" y1="592" y2="1120" x1="640" />
+            <wire x2="640" y1="1120" y2="1184" x1="640" />
+            <wire x2="640" y1="1184" y2="1248" x1="640" />
+            <wire x2="640" y1="1248" y2="1312" x1="640" />
+            <wire x2="640" y1="1312" y2="1600" x1="640" />
         </branch>
         <iomarker fontsize="28" x="480" y="1600" name="SW(7:0)" orien="R180" />
         <bustap x2="736" y1="352" y2="352" x1="640" />
@@ -163,6 +238,73 @@
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1294" y="800" type="branch" />
             <wire x2="1294" y1="800" y2="800" x1="1280" />
             <wire x2="1424" y1="800" y2="800" x1="1294" />
+        </branch>
+        <instance x="1568" y="784" name="XLXI_2" orien="R0" />
+        <instance x="1680" y="832" name="XLXI_3" orien="R0" />
+        <branch name="XLXN_18">
+            <wire x2="1632" y1="784" y2="800" x1="1632" />
+            <wire x2="1680" y1="800" y2="800" x1="1632" />
+        </branch>
+        <branch name="Buzzer">
+            <wire x2="2000" y1="800" y2="800" x1="1904" />
+        </branch>
+        <iomarker fontsize="28" x="2000" y="800" name="Buzzer" orien="R0" />
+        <instance x="960" y="1344" name="XLXI_4" orien="R0" />
+        <bustap x2="736" y1="1120" y2="1120" x1="640" />
+        <bustap x2="736" y1="1184" y2="1184" x1="640" />
+        <bustap x2="736" y1="1248" y2="1248" x1="640" />
+        <bustap x2="736" y1="1312" y2="1312" x1="640" />
+        <branch name="AN(3:0)">
+            <wire x2="1600" y1="1120" y2="1184" x1="1600" />
+            <wire x2="1600" y1="1184" y2="1216" x1="1600" />
+            <wire x2="1680" y1="1216" y2="1216" x1="1600" />
+            <wire x2="1600" y1="1216" y2="1248" x1="1600" />
+            <wire x2="1600" y1="1248" y2="1312" x1="1600" />
+        </branch>
+        <iomarker fontsize="28" x="1680" y="1216" name="AN(3:0)" orien="R0" />
+        <bustap x2="1504" y1="1120" y2="1120" x1="1600" />
+        <bustap x2="1504" y1="1184" y2="1184" x1="1600" />
+        <bustap x2="1504" y1="1248" y2="1248" x1="1600" />
+        <bustap x2="1504" y1="1312" y2="1312" x1="1600" />
+        <branch name="SW(7)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="780" y="1120" type="branch" />
+            <wire x2="780" y1="1120" y2="1120" x1="736" />
+            <wire x2="960" y1="1120" y2="1120" x1="780" />
+        </branch>
+        <branch name="SW(6)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="762" y="1184" type="branch" />
+            <wire x2="762" y1="1184" y2="1184" x1="736" />
+            <wire x2="960" y1="1184" y2="1184" x1="762" />
+        </branch>
+        <branch name="SW(5)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="755" y="1248" type="branch" />
+            <wire x2="755" y1="1248" y2="1248" x1="736" />
+            <wire x2="960" y1="1248" y2="1248" x1="755" />
+        </branch>
+        <branch name="SW(4)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="749" y="1312" type="branch" />
+            <wire x2="749" y1="1312" y2="1312" x1="736" />
+            <wire x2="960" y1="1312" y2="1312" x1="749" />
+        </branch>
+        <branch name="AN(3)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1297" y="1120" type="branch" />
+            <wire x2="1297" y1="1120" y2="1120" x1="1184" />
+            <wire x2="1504" y1="1120" y2="1120" x1="1297" />
+        </branch>
+        <branch name="AN(2)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1265" y="1184" type="branch" />
+            <wire x2="1265" y1="1184" y2="1184" x1="1184" />
+            <wire x2="1504" y1="1184" y2="1184" x1="1265" />
+        </branch>
+        <branch name="AN(1)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1245" y="1248" type="branch" />
+            <wire x2="1245" y1="1248" y2="1248" x1="1184" />
+            <wire x2="1504" y1="1248" y2="1248" x1="1245" />
+        </branch>
+        <branch name="AN(0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1244" y="1312" type="branch" />
+            <wire x2="1244" y1="1312" y2="1312" x1="1184" />
+            <wire x2="1504" y1="1312" y2="1312" x1="1244" />
         </branch>
     </sheet>
 </drawing>
