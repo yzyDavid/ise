@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/yzy/ise/exp06_hex27seg/MC14495_ZJU.xst" -ofn "/home/yzy/ise/exp06_hex27seg/MC14495_ZJU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-2L MC14495_ZJU.ngc MC14495_ZJU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o MC14495_ZJU_map.ncd MC14495_ZJU.ngd MC14495_ZJU.pcf 
+par -w -intstyle ise -ol high -mt off MC14495_ZJU_map.ncd MC14495_ZJU.ncd MC14495_ZJU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml MC14495_ZJU.twx MC14495_ZJU.ncd -o MC14495_ZJU.twr MC14495_ZJU.pcf 
+sch2sym -intstyle ise -family kintex7 -refsym MC14495_ZJU /home/yzy/ise/exp06_hex27seg/code/MC14495_ZJU.sch /home/yzy/ise/exp06_hex27seg/MC14495_ZJU.sym 
