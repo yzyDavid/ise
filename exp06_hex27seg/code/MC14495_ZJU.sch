@@ -49,6 +49,13 @@
         <signal name="XLXN_55" />
         <signal name="XLXN_56" />
         <signal name="XLXN_57" />
+        <signal name="A" />
+        <signal name="B" />
+        <signal name="C" />
+        <signal name="D" />
+        <signal name="E" />
+        <signal name="F" />
+        <signal name="G" />
         <port polarity="Input" name="D3" />
         <port polarity="Input" name="D2" />
         <port polarity="Input" name="D1" />
@@ -56,6 +63,13 @@
         <port polarity="Input" name="POINT" />
         <port polarity="Output" name="P" />
         <port polarity="Input" name="LE" />
+        <port polarity="Output" name="A" />
+        <port polarity="Output" name="B" />
+        <port polarity="Output" name="C" />
+        <port polarity="Output" name="D" />
+        <port polarity="Output" name="E" />
+        <port polarity="Output" name="F" />
+        <port polarity="Output" name="G" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -368,37 +382,37 @@
         <block symbolname="or2" name="XLXI_72">
             <blockpin signalname="LE" name="I0" />
             <blockpin signalname="XLXN_50" name="I1" />
-            <blockpin name="O" />
+            <blockpin signalname="A" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_73">
             <blockpin signalname="LE" name="I0" />
             <blockpin signalname="XLXN_51" name="I1" />
-            <blockpin name="O" />
+            <blockpin signalname="B" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_74">
             <blockpin signalname="LE" name="I0" />
             <blockpin signalname="XLXN_52" name="I1" />
-            <blockpin name="O" />
+            <blockpin signalname="C" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_75">
             <blockpin signalname="LE" name="I0" />
             <blockpin signalname="XLXN_53" name="I1" />
-            <blockpin name="O" />
+            <blockpin signalname="D" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_76">
             <blockpin signalname="LE" name="I0" />
             <blockpin signalname="XLXN_55" name="I1" />
-            <blockpin name="O" />
+            <blockpin signalname="E" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_77">
             <blockpin signalname="LE" name="I0" />
             <blockpin signalname="XLXN_56" name="I1" />
-            <blockpin name="O" />
+            <blockpin signalname="F" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_78">
             <blockpin signalname="LE" name="I0" />
             <blockpin signalname="XLXN_57" name="I1" />
-            <blockpin name="O" />
+            <blockpin signalname="G" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
@@ -818,5 +832,33 @@
             <wire x2="6032" y1="1664" y2="1760" x1="6032" />
         </branch>
         <iomarker fontsize="28" x="6640" y="400" name="LE" orien="R270" />
+        <branch name="A">
+            <wire x2="1504" y1="2016" y2="2048" x1="1504" />
+        </branch>
+        <iomarker fontsize="28" x="1504" y="2048" name="A" orien="R90" />
+        <branch name="B">
+            <wire x2="2448" y1="2016" y2="2048" x1="2448" />
+        </branch>
+        <iomarker fontsize="28" x="2448" y="2048" name="B" orien="R90" />
+        <branch name="C">
+            <wire x2="3152" y1="2016" y2="2048" x1="3152" />
+        </branch>
+        <iomarker fontsize="28" x="3152" y="2048" name="C" orien="R90" />
+        <branch name="D">
+            <wire x2="3920" y1="2016" y2="2048" x1="3920" />
+        </branch>
+        <iomarker fontsize="28" x="3920" y="2048" name="D" orien="R90" />
+        <branch name="E">
+            <wire x2="4608" y1="2016" y2="2048" x1="4608" />
+        </branch>
+        <iomarker fontsize="28" x="4608" y="2048" name="E" orien="R90" />
+        <branch name="F">
+            <wire x2="5264" y1="2016" y2="2048" x1="5264" />
+        </branch>
+        <iomarker fontsize="28" x="5264" y="2048" name="F" orien="R90" />
+        <branch name="G">
+            <wire x2="6000" y1="2016" y2="2048" x1="6000" />
+        </branch>
+        <iomarker fontsize="28" x="6000" y="2048" name="G" orien="R90" />
     </sheet>
 </drawing>
