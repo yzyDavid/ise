@@ -9,10 +9,18 @@
         <signal name="XLXN_1" />
         <signal name="XLXN_2" />
         <signal name="XLXN_3" />
-        <signal name="XLXN_4" />
-        <signal name="XLXN_5" />
-        <port polarity="Input" name="XLXN_4" />
-        <port polarity="Input" name="XLXN_5" />
+        <signal name="RSTN" />
+        <signal name="clk_100mhz" />
+        <signal name="XLXN_6(31:0)" />
+        <signal name="XLXN_7(1:0)" />
+        <signal name="SW(7:0)" />
+        <signal name="XLXN_9(3:0)" />
+        <signal name="SW(7:4)" />
+        <signal name="AN(3:0)" />
+        <port polarity="Input" name="RSTN" />
+        <port polarity="Input" name="clk_100mhz" />
+        <port polarity="Input" name="SW(7:0)" />
+        <port polarity="Output" name="AN(3:0)" />
         <blockdef name="MC14495_ZJU">
             <timestamp>2016-11-16T17:58:29</timestamp>
             <rect width="256" x="64" y="-512" height="512" />
@@ -83,22 +91,22 @@
             <blockpin name="G" />
         </block>
         <block symbolname="clkdiv" name="XLXI_2">
-            <blockpin signalname="XLXN_5" name="clk" />
+            <blockpin signalname="clk_100mhz" name="clk" />
             <blockpin signalname="XLXN_3" name="rst" />
-            <blockpin name="clkdiv(31:0)" />
+            <blockpin signalname="XLXN_6(31:0)" name="clkdiv(31:0)" />
         </block>
         <block symbolname="dispsync" name="XLXI_3">
             <blockpin name="Hexs(15:0)" />
-            <blockpin name="Scan(1:0)" />
-            <blockpin name="point(3:0)" />
-            <blockpin name="blink(3:0)" />
+            <blockpin signalname="XLXN_7(1:0)" name="Scan(1:0)" />
+            <blockpin signalname="XLXN_9(3:0)" name="point(3:0)" />
+            <blockpin signalname="SW(7:4)" name="blink(3:0)" />
             <blockpin name="p" />
             <blockpin name="LE" />
             <blockpin name="Hex(3:0)" />
-            <blockpin name="AN(3:0)" />
+            <blockpin signalname="AN(3:0)" name="AN(3:0)" />
         </block>
         <block symbolname="inv" name="XLXI_4">
-            <blockpin signalname="XLXN_4" name="I" />
+            <blockpin signalname="RSTN" name="I" />
             <blockpin signalname="XLXN_3" name="O" />
         </block>
     </netlist>
@@ -119,13 +127,42 @@
         <branch name="XLXN_3">
             <wire x2="640" y1="304" y2="304" x1="480" />
         </branch>
-        <branch name="XLXN_4">
-            <wire x2="256" y1="304" y2="304" x1="160" />
+        <branch name="RSTN">
+            <wire x2="240" y1="304" y2="304" x1="144" />
+            <wire x2="256" y1="304" y2="304" x1="240" />
         </branch>
-        <branch name="XLXN_5">
-            <wire x2="640" y1="240" y2="240" x1="160" />
+        <branch name="clk_100mhz">
+            <wire x2="624" y1="240" y2="240" x1="208" />
+            <wire x2="640" y1="240" y2="240" x1="624" />
         </branch>
-        <iomarker fontsize="28" x="160" y="240" name="XLXN_5" orien="R180" />
-        <iomarker fontsize="28" x="160" y="304" name="XLXN_4" orien="R180" />
+        <branch name="XLXN_6(31:0)">
+            <wire x2="1120" y1="416" y2="416" x1="480" />
+            <wire x2="480" y1="416" y2="624" x1="480" />
+            <wire x2="1120" y1="240" y2="240" x1="1024" />
+            <wire x2="1120" y1="240" y2="416" x1="1120" />
+        </branch>
+        <bustap x2="576" y1="624" y2="624" x1="480" />
+        <branch name="XLXN_7(1:0)">
+            <wire x2="640" y1="624" y2="624" x1="576" />
+        </branch>
+        <iomarker fontsize="28" x="208" y="240" name="clk_100mhz" orien="R180" />
+        <iomarker fontsize="28" x="144" y="304" name="RSTN" orien="R180" />
+        <branch name="SW(7:0)">
+            <wire x2="480" y1="688" y2="688" x1="320" />
+            <wire x2="480" y1="688" y2="752" x1="480" />
+        </branch>
+        <iomarker fontsize="28" x="320" y="688" name="SW(7:0)" orien="R180" />
+        <bustap x2="576" y1="688" y2="688" x1="480" />
+        <bustap x2="576" y1="752" y2="752" x1="480" />
+        <branch name="XLXN_9(3:0)">
+            <wire x2="640" y1="688" y2="688" x1="576" />
+        </branch>
+        <branch name="SW(7:4)">
+            <wire x2="640" y1="752" y2="752" x1="576" />
+        </branch>
+        <branch name="AN(3:0)">
+            <wire x2="1120" y1="752" y2="752" x1="1024" />
+        </branch>
+        <iomarker fontsize="28" x="1120" y="752" name="AN(3:0)" orien="R0" />
     </sheet>
 </drawing>
