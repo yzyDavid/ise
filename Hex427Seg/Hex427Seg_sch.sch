@@ -6,8 +6,7 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_1" />
-        <signal name="XLXN_2" />
+        <signal name="SEGMENT(7:0)" />
         <signal name="XLXN_3" />
         <signal name="RSTN" />
         <signal name="clk_100mhz" />
@@ -17,6 +16,22 @@
         <signal name="XLXN_9(3:0)" />
         <signal name="SW(7:4)" />
         <signal name="AN(3:0)" />
+        <signal name="XLXN_1(3:0)" />
+        <signal name="Hex(3)" />
+        <signal name="Hex(2)" />
+        <signal name="Hex(1)" />
+        <signal name="Hex(0)" />
+        <signal name="XLXN_17" />
+        <signal name="XLXN_18" />
+        <signal name="SEGMENT(7)" />
+        <signal name="SEGMENT(0)" />
+        <signal name="SEGMENT(1)" />
+        <signal name="SEGMENT(2)" />
+        <signal name="SEGMENT(3)" />
+        <signal name="SEGMENT(4)" />
+        <signal name="SEGMENT(5)" />
+        <signal name="SEGMENT(6)" />
+        <port polarity="Output" name="SEGMENT(7:0)" />
         <port polarity="Input" name="RSTN" />
         <port polarity="Input" name="clk_100mhz" />
         <port polarity="Input" name="SW(7:0)" />
@@ -75,20 +90,20 @@
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
         <block symbolname="MC14495_ZJU" name="XLXI_1">
-            <blockpin name="D3" />
-            <blockpin name="D2" />
-            <blockpin name="D1" />
-            <blockpin name="D0" />
-            <blockpin name="POINT" />
-            <blockpin name="LE" />
-            <blockpin name="P" />
-            <blockpin name="A" />
-            <blockpin name="B" />
-            <blockpin name="C" />
-            <blockpin name="D" />
-            <blockpin name="E" />
-            <blockpin name="F" />
-            <blockpin name="G" />
+            <blockpin signalname="Hex(3)" name="D3" />
+            <blockpin signalname="Hex(2)" name="D2" />
+            <blockpin signalname="Hex(1)" name="D1" />
+            <blockpin signalname="Hex(0)" name="D0" />
+            <blockpin signalname="XLXN_17" name="POINT" />
+            <blockpin signalname="XLXN_18" name="LE" />
+            <blockpin signalname="SEGMENT(7)" name="P" />
+            <blockpin signalname="SEGMENT(0)" name="A" />
+            <blockpin signalname="SEGMENT(1)" name="B" />
+            <blockpin signalname="SEGMENT(2)" name="C" />
+            <blockpin signalname="SEGMENT(3)" name="D" />
+            <blockpin signalname="SEGMENT(4)" name="E" />
+            <blockpin signalname="SEGMENT(5)" name="F" />
+            <blockpin signalname="SEGMENT(6)" name="G" />
         </block>
         <block symbolname="clkdiv" name="XLXI_2">
             <blockpin signalname="clk_100mhz" name="clk" />
@@ -100,9 +115,9 @@
             <blockpin signalname="XLXN_7(1:0)" name="Scan(1:0)" />
             <blockpin signalname="XLXN_9(3:0)" name="point(3:0)" />
             <blockpin signalname="SW(7:4)" name="blink(3:0)" />
-            <blockpin name="p" />
-            <blockpin name="LE" />
-            <blockpin name="Hex(3:0)" />
+            <blockpin signalname="XLXN_17" name="p" />
+            <blockpin signalname="XLXN_18" name="LE" />
+            <blockpin signalname="XLXN_1(3:0)" name="Hex(3:0)" />
             <blockpin signalname="AN(3:0)" name="AN(3:0)" />
         </block>
         <block symbolname="inv" name="XLXI_4">
@@ -117,11 +132,16 @@
         </instance>
         <instance x="640" y="784" name="XLXI_3" orien="R0">
         </instance>
-        <branch name="XLXN_1">
-            <wire x2="1600" y1="272" y2="880" x1="1600" />
-        </branch>
-        <branch name="XLXN_2">
-            <wire x2="2640" y1="272" y2="720" x1="2640" />
+        <branch name="SEGMENT(7:0)">
+            <wire x2="2640" y1="272" y2="336" x1="2640" />
+            <wire x2="2640" y1="336" y2="400" x1="2640" />
+            <wire x2="2640" y1="400" y2="464" x1="2640" />
+            <wire x2="2640" y1="464" y2="512" x1="2640" />
+            <wire x2="2720" y1="512" y2="512" x1="2640" />
+            <wire x2="2640" y1="512" y2="528" x1="2640" />
+            <wire x2="2640" y1="528" y2="592" x1="2640" />
+            <wire x2="2640" y1="592" y2="656" x1="2640" />
+            <wire x2="2640" y1="656" y2="720" x1="2640" />
         </branch>
         <instance x="256" y="336" name="XLXI_4" orien="R0" />
         <branch name="XLXN_3">
@@ -164,5 +184,95 @@
             <wire x2="1120" y1="752" y2="752" x1="1024" />
         </branch>
         <iomarker fontsize="28" x="1120" y="752" name="AN(3:0)" orien="R0" />
+        <branch name="XLXN_1(3:0)">
+            <wire x2="1440" y1="688" y2="688" x1="1024" />
+            <wire x2="1440" y1="272" y2="352" x1="1440" />
+            <wire x2="1440" y1="352" y2="432" x1="1440" />
+            <wire x2="1440" y1="432" y2="512" x1="1440" />
+            <wire x2="1440" y1="512" y2="688" x1="1440" />
+        </branch>
+        <bustap x2="1536" y1="272" y2="272" x1="1440" />
+        <bustap x2="1536" y1="352" y2="352" x1="1440" />
+        <bustap x2="1536" y1="432" y2="432" x1="1440" />
+        <bustap x2="1536" y1="512" y2="512" x1="1440" />
+        <branch name="Hex(3)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1625" y="272" type="branch" />
+            <wire x2="1625" y1="272" y2="272" x1="1536" />
+            <wire x2="1856" y1="272" y2="272" x1="1625" />
+        </branch>
+        <branch name="Hex(2)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1617" y="352" type="branch" />
+            <wire x2="1617" y1="352" y2="352" x1="1536" />
+            <wire x2="1856" y1="352" y2="352" x1="1617" />
+        </branch>
+        <branch name="Hex(1)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1604" y="432" type="branch" />
+            <wire x2="1604" y1="432" y2="432" x1="1536" />
+            <wire x2="1856" y1="432" y2="432" x1="1604" />
+        </branch>
+        <branch name="Hex(0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1594" y="512" type="branch" />
+            <wire x2="1594" y1="512" y2="512" x1="1536" />
+            <wire x2="1856" y1="512" y2="512" x1="1594" />
+        </branch>
+        <branch name="XLXN_17">
+            <wire x2="1424" y1="560" y2="560" x1="1024" />
+            <wire x2="1424" y1="560" y2="592" x1="1424" />
+            <wire x2="1856" y1="592" y2="592" x1="1424" />
+        </branch>
+        <branch name="XLXN_18">
+            <wire x2="1424" y1="624" y2="624" x1="1024" />
+            <wire x2="1424" y1="624" y2="672" x1="1424" />
+            <wire x2="1856" y1="672" y2="672" x1="1424" />
+        </branch>
+        <iomarker fontsize="28" x="2720" y="512" name="SEGMENT(7:0)" orien="R0" />
+        <bustap x2="2544" y1="272" y2="272" x1="2640" />
+        <bustap x2="2544" y1="336" y2="336" x1="2640" />
+        <bustap x2="2544" y1="400" y2="400" x1="2640" />
+        <bustap x2="2544" y1="464" y2="464" x1="2640" />
+        <bustap x2="2544" y1="528" y2="528" x1="2640" />
+        <bustap x2="2544" y1="592" y2="592" x1="2640" />
+        <bustap x2="2544" y1="656" y2="656" x1="2640" />
+        <bustap x2="2544" y1="720" y2="720" x1="2640" />
+        <branch name="SEGMENT(7)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2341" y="272" type="branch" />
+            <wire x2="2341" y1="272" y2="272" x1="2240" />
+            <wire x2="2544" y1="272" y2="272" x1="2341" />
+        </branch>
+        <branch name="SEGMENT(0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2300" y="336" type="branch" />
+            <wire x2="2300" y1="336" y2="336" x1="2240" />
+            <wire x2="2544" y1="336" y2="336" x1="2300" />
+        </branch>
+        <branch name="SEGMENT(1)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2286" y="400" type="branch" />
+            <wire x2="2286" y1="400" y2="400" x1="2240" />
+            <wire x2="2544" y1="400" y2="400" x1="2286" />
+        </branch>
+        <branch name="SEGMENT(2)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2270" y="464" type="branch" />
+            <wire x2="2270" y1="464" y2="464" x1="2240" />
+            <wire x2="2544" y1="464" y2="464" x1="2270" />
+        </branch>
+        <branch name="SEGMENT(3)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2301" y="528" type="branch" />
+            <wire x2="2301" y1="528" y2="528" x1="2240" />
+            <wire x2="2544" y1="528" y2="528" x1="2301" />
+        </branch>
+        <branch name="SEGMENT(4)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2280" y="592" type="branch" />
+            <wire x2="2280" y1="592" y2="592" x1="2240" />
+            <wire x2="2544" y1="592" y2="592" x1="2280" />
+        </branch>
+        <branch name="SEGMENT(5)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2265" y="656" type="branch" />
+            <wire x2="2265" y1="656" y2="656" x1="2240" />
+            <wire x2="2544" y1="656" y2="656" x1="2265" />
+        </branch>
+        <branch name="SEGMENT(6)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2288" y="720" type="branch" />
+            <wire x2="2288" y1="720" y2="720" x1="2240" />
+            <wire x2="2544" y1="720" y2="720" x1="2288" />
+        </branch>
     </sheet>
 </drawing>
