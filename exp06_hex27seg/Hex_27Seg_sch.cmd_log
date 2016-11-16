@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "/home/yzy/ise/exp06_hex27seg/Hex_27Seg_sch.xst" -ofn "/home/yzy/ise/exp06_hex27seg/Hex_27Seg_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-2L Hex_27Seg_sch.ngc Hex_27Seg_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Hex_27Seg_sch_map.ncd Hex_27Seg_sch.ngd Hex_27Seg_sch.pcf 
+par -w -intstyle ise -ol high -mt off Hex_27Seg_sch_map.ncd Hex_27Seg_sch.ncd Hex_27Seg_sch.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Hex_27Seg_sch.twx Hex_27Seg_sch.ncd -o Hex_27Seg_sch.twr Hex_27Seg_sch.pcf 
+xst -intstyle ise -ifn "/home/yzy/ise/exp06_hex27seg/Hex_27Seg_sch.xst" -ofn "/home/yzy/ise/exp06_hex27seg/Hex_27Seg_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k160t-ffg676-2L Hex_27Seg_sch.ngc Hex_27Seg_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Hex_27Seg_sch_map.ncd Hex_27Seg_sch.ngd Hex_27Seg_sch.pcf 
+par -w -intstyle ise -ol high -mt off Hex_27Seg_sch_map.ncd Hex_27Seg_sch.ncd Hex_27Seg_sch.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Hex_27Seg_sch.twx Hex_27Seg_sch.ncd -o Hex_27Seg_sch.twr Hex_27Seg_sch.pcf 
+bitgen -intstyle ise -f Hex_27Seg_sch.ut Hex_27Seg_sch.ncd 
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Hex_27Seg_sch_map.ncd Hex_27Seg_sch.ngd Hex_27Seg_sch.pcf 
+par -w -intstyle ise -ol high -mt off Hex_27Seg_sch_map.ncd Hex_27Seg_sch.ncd Hex_27Seg_sch.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Hex_27Seg_sch.twx Hex_27Seg_sch.ncd -o Hex_27Seg_sch.twr Hex_27Seg_sch.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f Hex_27Seg_sch.ut Hex_27Seg_sch.ncd 
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Hex_27Seg_sch_map.ncd Hex_27Seg_sch.ngd Hex_27Seg_sch.pcf 
+xst -intstyle ise -ifn "/home/yzy/ise/exp06_hex27seg/Hex_27Seg_sch.xst" -ofn "/home/yzy/ise/exp06_hex27seg/Hex_27Seg_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraint.ucf -p xc7k160t-ffg676-2L Hex_27Seg_sch.ngc Hex_27Seg_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Hex_27Seg_sch_map.ncd Hex_27Seg_sch.ngd Hex_27Seg_sch.pcf 
+par -w -intstyle ise -ol high -mt off Hex_27Seg_sch_map.ncd Hex_27Seg_sch.ncd Hex_27Seg_sch.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Hex_27Seg_sch.twx Hex_27Seg_sch.ncd -o Hex_27Seg_sch.twr Hex_27Seg_sch.pcf -ucf constraint.ucf 
+bitgen -intstyle ise -f Hex_27Seg_sch.ut Hex_27Seg_sch.ncd 

@@ -1,0 +1,86 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Hex_27Seg_sch.vf
+// /___/   /\     Timestamp : 11/16/2016 14:42:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog /home/yzy/ise/exp06_hex27seg/Hex_27Seg_sch.vf -w /home/yzy/ise/exp06_hex27seg/Hex_27Seg_sch.sch
+//Design Name: Hex_27Seg_sch
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module INV4_HXILINX_Hex_27Seg_sch (O0, O1, O2, O3, I0, I1, I2, I3);
+    
+
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+
+   input  I0;
+   input  I1;
+   input  I2;
+   input  I3;
+
+assign O0 = !I0;
+assign O1 = !I1;
+assign O2 = !I2;
+assign O3 = !I3;
+
+endmodule
+`timescale 1ns / 1ps
+
+module Hex_27Seg_sch(LE, 
+                     POINT, 
+                     SW, 
+                     AN, 
+                     Buzzer, 
+                     SEGMENT);
+
+    input LE;
+    input POINT;
+    input [7:0] SW;
+   output [3:0] AN;
+   output Buzzer;
+   output [7:0] SEGMENT;
+   
+   wire XLXN_18;
+   
+   MC14495_ZJU  M1 (.D0(SW[0]), 
+                   .D1(SW[1]), 
+                   .D2(SW[2]), 
+                   .D3(SW[3]), 
+                   .LE(LE), 
+                   .POINT(POINT), 
+                   .A(SEGMENT[0]), 
+                   .B(SEGMENT[1]), 
+                   .C(SEGMENT[2]), 
+                   .D(SEGMENT[3]), 
+                   .E(SEGMENT[4]), 
+                   .F(SEGMENT[5]), 
+                   .G(SEGMENT[6]), 
+                   .P(SEGMENT[7]));
+   VCC  XLXI_2 (.P(XLXN_18));
+   BUF  XLXI_3 (.I(XLXN_18), 
+               .O(Buzzer));
+   (* HU_SET = "XLXI_4_0" *) 
+   INV4_HXILINX_Hex_27Seg_sch  XLXI_4 (.I0(SW[4]), 
+                                      .I1(SW[5]), 
+                                      .I2(SW[6]), 
+                                      .I3(SW[7]), 
+                                      .O0(AN[0]), 
+                                      .O1(AN[1]), 
+                                      .O2(AN[2]), 
+                                      .O3(AN[3]));
+endmodule

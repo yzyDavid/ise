@@ -25,7 +25,6 @@
         <signal name="XLXN_18" />
         <signal name="Buzzer" />
         <signal name="AN(3:0)" />
-        <signal name="SW(7)" />
         <signal name="SW(6)" />
         <signal name="SW(5)" />
         <signal name="SW(4)" />
@@ -33,6 +32,7 @@
         <signal name="AN(2)" />
         <signal name="AN(1)" />
         <signal name="AN(0)" />
+        <signal name="SW(7)" />
         <port polarity="Input" name="SW(7:0)" />
         <port polarity="Input" name="POINT" />
         <port polarity="Input" name="LE" />
@@ -266,11 +266,6 @@
         <bustap x2="1504" y1="1184" y2="1184" x1="1600" />
         <bustap x2="1504" y1="1248" y2="1248" x1="1600" />
         <bustap x2="1504" y1="1312" y2="1312" x1="1600" />
-        <branch name="SW(7)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="780" y="1120" type="branch" />
-            <wire x2="780" y1="1120" y2="1120" x1="736" />
-            <wire x2="960" y1="1120" y2="1120" x1="780" />
-        </branch>
         <branch name="SW(6)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="762" y="1184" type="branch" />
             <wire x2="762" y1="1184" y2="1184" x1="736" />
@@ -305,6 +300,11 @@
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1244" y="1312" type="branch" />
             <wire x2="1244" y1="1312" y2="1312" x1="1184" />
             <wire x2="1504" y1="1312" y2="1312" x1="1244" />
+        </branch>
+        <branch name="SW(7)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="777" y="1120" type="branch" />
+            <wire x2="777" y1="1120" y2="1120" x1="736" />
+            <wire x2="960" y1="1120" y2="1120" x1="777" />
         </branch>
     </sheet>
 </drawing>

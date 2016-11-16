@@ -1,1 +1,1 @@
-sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/yzy/ise/exp06_hex27seg/MC14495_ZJU.vf,-w,/home/yzy/ise/exp06_hex27seg/code/MC14495_ZJU.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/yzy/ise/exp06_hex27seg/Hex_27Seg_sch.vf,-w,/home/yzy/ise/exp06_hex27seg/Hex_27Seg_sch.sch
