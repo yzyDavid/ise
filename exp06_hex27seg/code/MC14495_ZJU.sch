@@ -39,10 +39,14 @@
         <signal name="XLXN_44" />
         <signal name="XLXN_45" />
         <signal name="XLXN_46" />
+        <signal name="POINT" />
+        <signal name="P" />
         <port polarity="Input" name="D3" />
         <port polarity="Input" name="D2" />
         <port polarity="Input" name="D1" />
         <port polarity="Input" name="D0" />
+        <port polarity="Input" name="POINT" />
+        <port polarity="Output" name="P" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -337,6 +341,10 @@
             <blockpin signalname="XLXN_25" name="I3" />
             <blockpin signalname="XLXN_46" name="O" />
         </block>
+        <block symbolname="inv" name="XLXI_71">
+            <blockpin signalname="POINT" name="I" />
+            <blockpin signalname="P" name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
         <instance x="208" y="480" name="XLXI_1" orien="R90" />
@@ -362,8 +370,8 @@
             <wire x2="5488" y1="752" y2="752" x1="3296" />
             <wire x2="5488" y1="752" y2="1120" x1="5488" />
             <wire x2="6176" y1="752" y2="752" x1="5488" />
-            <wire x2="6848" y1="752" y2="752" x1="6176" />
             <wire x2="6176" y1="752" y2="1120" x1="6176" />
+            <wire x2="6400" y1="752" y2="752" x1="6176" />
             <wire x2="240" y1="400" y2="448" x1="240" />
         </branch>
         <branch name="D2">
@@ -393,8 +401,8 @@
             <wire x2="6000" y1="816" y2="816" x1="5552" />
             <wire x2="6000" y1="816" y2="1120" x1="6000" />
             <wire x2="6240" y1="816" y2="816" x1="6000" />
-            <wire x2="6848" y1="816" y2="816" x1="6240" />
             <wire x2="6240" y1="816" y2="1120" x1="6240" />
+            <wire x2="6400" y1="816" y2="816" x1="6240" />
             <wire x2="480" y1="400" y2="448" x1="480" />
         </branch>
         <branch name="D1">
@@ -414,8 +422,8 @@
             <wire x2="5376" y1="880" y2="880" x1="5264" />
             <wire x2="5376" y1="880" y2="1120" x1="5376" />
             <wire x2="6064" y1="880" y2="880" x1="5376" />
-            <wire x2="6848" y1="880" y2="880" x1="6064" />
             <wire x2="6064" y1="880" y2="1120" x1="6064" />
+            <wire x2="6400" y1="880" y2="880" x1="6064" />
             <wire x2="720" y1="400" y2="448" x1="720" />
         </branch>
         <branch name="D0">
@@ -443,8 +451,8 @@
             <wire x2="5680" y1="944" y2="944" x1="5440" />
             <wire x2="5680" y1="944" y2="1120" x1="5680" />
             <wire x2="6128" y1="944" y2="944" x1="5680" />
-            <wire x2="6848" y1="944" y2="944" x1="6128" />
             <wire x2="6128" y1="944" y2="1120" x1="6128" />
+            <wire x2="6400" y1="944" y2="944" x1="6128" />
             <wire x2="960" y1="400" y2="448" x1="960" />
         </branch>
         <branch name="XLXN_22">
@@ -470,8 +478,8 @@
             <wire x2="5760" y1="720" y2="720" x1="5312" />
             <wire x2="5760" y1="720" y2="1120" x1="5760" />
             <wire x2="5936" y1="720" y2="720" x1="5760" />
-            <wire x2="6848" y1="720" y2="720" x1="5936" />
             <wire x2="5936" y1="720" y2="1120" x1="5936" />
+            <wire x2="6400" y1="720" y2="720" x1="5936" />
         </branch>
         <branch name="XLXN_23">
             <wire x2="480" y1="704" y2="784" x1="480" />
@@ -488,8 +496,8 @@
             <wire x2="5200" y1="784" y2="784" x1="5024" />
             <wire x2="5200" y1="784" y2="1120" x1="5200" />
             <wire x2="5824" y1="784" y2="784" x1="5200" />
-            <wire x2="6848" y1="784" y2="784" x1="5824" />
             <wire x2="5824" y1="784" y2="1120" x1="5824" />
+            <wire x2="6400" y1="784" y2="784" x1="5824" />
         </branch>
         <branch name="XLXN_24">
             <wire x2="720" y1="704" y2="848" x1="720" />
@@ -510,8 +518,8 @@
             <wire x2="5888" y1="848" y2="848" x1="5616" />
             <wire x2="5888" y1="848" y2="1120" x1="5888" />
             <wire x2="6304" y1="848" y2="848" x1="5888" />
-            <wire x2="6848" y1="848" y2="848" x1="6304" />
             <wire x2="6304" y1="848" y2="1120" x1="6304" />
+            <wire x2="6400" y1="848" y2="848" x1="6304" />
         </branch>
         <branch name="XLXN_25">
             <wire x2="960" y1="704" y2="912" x1="960" />
@@ -526,8 +534,8 @@
             <wire x2="3248" y1="912" y2="912" x1="3072" />
             <wire x2="3248" y1="912" y2="1120" x1="3248" />
             <wire x2="6368" y1="912" y2="912" x1="3248" />
-            <wire x2="6848" y1="912" y2="912" x1="6368" />
             <wire x2="6368" y1="912" y2="1120" x1="6368" />
+            <wire x2="6400" y1="912" y2="912" x1="6368" />
         </branch>
         <instance x="1024" y="1120" name="XLXI_5" orien="R90" />
         <instance x="1264" y="1120" name="XLXI_6" orien="R90" />
@@ -670,5 +678,14 @@
             <wire x2="6272" y1="1408" y2="1408" x1="6096" />
             <wire x2="6272" y1="1376" y2="1408" x1="6272" />
         </branch>
+        <instance x="6768" y="720" name="XLXI_71" orien="R90" />
+        <branch name="POINT">
+            <wire x2="6800" y1="400" y2="720" x1="6800" />
+        </branch>
+        <branch name="P">
+            <wire x2="6800" y1="944" y2="1200" x1="6800" />
+        </branch>
+        <iomarker fontsize="28" x="6800" y="400" name="POINT" orien="R270" />
+        <iomarker fontsize="28" x="6800" y="1200" name="P" orien="R90" />
     </sheet>
 </drawing>
