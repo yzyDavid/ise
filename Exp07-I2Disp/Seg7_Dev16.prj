@@ -1,0 +1,4 @@
+verilog work "MUX4T1_4.vf"
+verilog work "ScanSync16.vf"
+verilog work "MC14495_ZJU.vf"
+verilog work "Seg7_Dev16.vf"

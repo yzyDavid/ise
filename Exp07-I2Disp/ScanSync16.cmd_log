@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/Exp07-I2Disp/ScanSync16.xst" -ofn "D:/Exp07-I2Disp/ScanSync16.syr" 
+sch2hdl -intstyle ise -family kintex7 -verilog ScanSync16_drc.vf -w D:/Exp07-I2Disp/CODE/ScanSync16.sch 
+sch2sym -intstyle ise -family kintex7 -refsym ScanSync16 D:/Exp07-I2Disp/CODE/ScanSync16.sch D:/Exp07-I2Disp/ScanSync16.sym 
+xst -intstyle ise -ifn "D:/Exp07-I2Disp/ScanSync16.xst" -ofn "D:/Exp07-I2Disp/ScanSync16.syr" 

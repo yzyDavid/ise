@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/Exp07-I2Disp/Seg7_Dev16.xst" -ofn "D:/Exp07-I2Disp/Seg7_Dev16.syr" 
+xst -intstyle ise -ifn "D:/Exp07-I2Disp/Seg7_Dev16.xst" -ofn "D:/Exp07-I2Disp/Seg7_Dev16.syr" 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev16_drc.vf -w D:/Exp07-I2Disp/CODE/Seg7_Dev16.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Seg7_Dev16 D:/Exp07-I2Disp/CODE/Seg7_Dev16.sch D:/Exp07-I2Disp/Seg7_Dev16.sym 

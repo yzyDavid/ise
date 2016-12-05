@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-02T18:51:55</DateModified>
+  <DateModified>2016-11-23T12:31:55</DateModified>
   <ModuleName>HCT138_sch</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/yzy/ise/Exp05-38Decoder/iseconfig/HCT138_sch.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/yzy/ise/Exp05-38Decoder</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/yzy/ise/Exp05-38Decoder/</ImplementationReportsDirectory>
   <DateInitialized>2016-11-02T18:51:55</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

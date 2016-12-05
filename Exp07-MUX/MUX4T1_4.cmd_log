@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/Exp07-MUX/MUX4T1_4.xst" -ofn "D:/Exp07-MUX/MUX4T1_4.syr" 
+xst -intstyle ise -ifn "D:/Exp07-MUX/MUX4T1_4.xst" -ofn "D:/Exp07-MUX/MUX4T1_4.syr" 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX4T1_4_drc.vf -w D:/Exp07-MUX/CODE/MUX4T1_4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX4T1_4 D:/Exp07-MUX/CODE/MUX4T1_4.sch D:/Exp07-MUX/MUX4T1_4.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX4T1_4_drc.vf -w D:/Exp07-MUX/CODE/MUX4T1_4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX4T1_4 D:/Exp07-MUX/CODE/MUX4T1_4.sch D:/Exp07-MUX/MUX4T1_4.sym 

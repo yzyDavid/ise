@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Exp07-ExMUX.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="MUX4T1_4.vf"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MUX8T1_32.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="MUX8T1_32.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MUX8T1_32.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MUX8T1_32.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MUX8T1_32.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX8T1_32.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX8T1_32.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MUX8T1_32.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MUX8T1_32.syr"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="MUX8T1_32.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MUX8T1_32.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX8T1_32_MUX8T1_32_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MUX8T1_32_MUX8T1_32_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MUX8T1_32_MUX8T1_32_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX8T1_32_MUX8T1_32_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="MUX8T1_32_drc.vf"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MUX8T1_32_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MUX8T1_32_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MUX8T1_8.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="MUX8T1_8.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MUX8T1_8.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MUX8T1_8.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MUX8T1_8.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX8T1_8.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX8T1_8.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MUX8T1_8.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MUX8T1_8.syr"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="MUX8T1_8.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MUX8T1_8.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MUX8T1_8_MUX8T1_8_sch_tb_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX8T1_8_MUX8T1_8_sch_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="MUX8T1_8_drc.vf"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MUX8T1_8_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MUX8T1_8_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1479275398" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1479275398">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479278066" xil_pn:in_ck="3022552360583913020" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1479278066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CODE/MUX8T1_32TESTER.v"/>
+      <outfile xil_pn:name="CODE/MUX8T1_8TEST.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1479727569" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4301197279909965449" xil_pn:start_ts="1479727569">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479727572" xil_pn:in_ck="-8889674075997852335" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3792962755826640469" xil_pn:start_ts="1479727569">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="MUX4T1_4.vf"/>
+      <outfile xil_pn:name="MUX8T1_32.vf"/>
+      <outfile xil_pn:name="MUX8T1_8.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1479278089" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1468569119732267198" xil_pn:start_ts="1479278089">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1479727182" xil_pn:in_ck="8287281364021401865" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1479727182">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CODE/MUX8T1_32TESTER.v"/>
+      <outfile xil_pn:name="CODE/MUX8T1_8TEST.v"/>
+      <outfile xil_pn:name="MUX4T1_4.vf"/>
+      <outfile xil_pn:name="MUX8T1_32.vf"/>
+      <outfile xil_pn:name="MUX8T1_8.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1479926522" xil_pn:in_ck="8287281364021401865" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1007452714245181551" xil_pn:start_ts="1479926517">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MUX8T1_32_MUX8T1_32_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="MUX8T1_32_MUX8T1_32_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1479926522" xil_pn:in_ck="-9148641685164461902" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2055276491089456654" xil_pn:start_ts="1479926522">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="MUX8T1_32_MUX8T1_32_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1479275401" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1479275401">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

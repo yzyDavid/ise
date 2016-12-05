@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/Exp07-ExMUX/MUX8T1_32.xst" -ofn "D:/Exp07-ExMUX/MUX8T1_32.syr" 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX8T1_32_drc.vf -w D:/Exp07-ExMUX/CODE/MUX8T1_32.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX8T1_32 D:/Exp07-ExMUX/CODE/MUX8T1_32.sch D:/Exp07-ExMUX/MUX8T1_32.sym 
