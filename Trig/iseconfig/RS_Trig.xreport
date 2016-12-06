@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-12-06T15:13:12</DateModified>
+  <DateModified>2016-12-06T21:56:53</DateModified>
   <ModuleName>RS_Trig</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-12-06T21:56:25</SummaryTimeStamp>
   <SavedFilePath>/home/yzy/ise/Trig/iseconfig/RS_Trig.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/yzy/ise/Trig</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/yzy/ise/Trig/</ImplementationReportsDirectory>
   <DateInitialized>2016-12-06T15:13:12</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : RS_Trig.vf
+// /___/   /\     Timestamp : 12/06/2016 21:52:40
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog /home/yzy/ise/Trig/RS_Trig.vf -w /home/yzy/ise/Trig/RS_Trig.sch
+//Design Name: RS_Trig
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module RS_Trig(C, 
+               R, 
+               S, 
+               Q, 
+               Qn, 
+               Y);
+
+    input C;
+    input R;
+    input S;
+   output Q;
+   output Qn;
+   output Y;
+   
+   wire XLXN_2;
+   wire XLXN_9;
+   wire Y_DUMMY;
+   
+   assign Y = Y_DUMMY;
+   RS_EN  XLXI_1 (.C(C), 
+                 .R(R), 
+                 .S(S), 
+                 .Q(Y_DUMMY), 
+                 .Qn(XLXN_2));
+   RS_EN  XLXI_2 (.C(XLXN_9), 
+                 .R(XLXN_2), 
+                 .S(Y_DUMMY), 
+                 .Q(Q), 
+                 .Qn(Qn));
+   INV  XLXI_3 (.I(C), 
+               .O(XLXN_9));
+endmodule

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/home/yzy/ise/Locker/RS_EN.xst" -ofn "/home/yzy/ise/Locker/RS_EN.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym RS_EN /home/yzy/ise/Locker/RS_EN.sch /home/yzy/ise/Locker/RS_EN.sym 

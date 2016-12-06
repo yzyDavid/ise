@@ -21,8 +21,73 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Trig.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="RS_Trig.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="RS_Trig.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="RS_Trig.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RS_Trig.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="RS_Trig.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="RS_Trig.vf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="RS_Trig.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="RS_Trig_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="RS_Trig_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RS_Trig_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1481021873" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1481021873">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481032579" xil_pn:in_ck="3883717335797092843" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2835706717870278978" xil_pn:start_ts="1481032578">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="RS_Trig.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1481021874" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6320694748720579677" xil_pn:start_ts="1481021874">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481021874" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1481021874">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481021874" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3037599014879760202" xil_pn:start_ts="1481021874">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1481021874" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-679146238375871736" xil_pn:start_ts="1481021874">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1481021874" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3123288013036558297" xil_pn:start_ts="1481021874">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1481032585" xil_pn:in_ck="3926635461378468" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="1336334151217965822" xil_pn:start_ts="1481032579">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="RS_Trig.jhd"/>
+      <outfile xil_pn:name="RS_Trig.lso"/>
+      <outfile xil_pn:name="RS_Trig.prj"/>
+      <outfile xil_pn:name="RS_Trig.syr"/>
+      <outfile xil_pn:name="RS_Trig.xst"/>
+      <outfile xil_pn:name="RS_Trig_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
 
 </generated_project>
