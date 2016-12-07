@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/yzy/ise/Trig/Top_Trigger.vf" Line 23: Empty module &lt;<arg fmt="%s" index="1">Top_Trigger</arg>&gt; remains a black box.
-</msg>
-
 </messages>
 

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym MB_DFF /home/yzy/ise/Trig/MB_DFF.sch /home/yzy/ise/Trig/MB_DFF.sym 

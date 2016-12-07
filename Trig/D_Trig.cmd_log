@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym D_Trig /home/yzy/ise/Trig/D_Trig.sch /home/yzy/ise/Trig/D_Trig.sym 

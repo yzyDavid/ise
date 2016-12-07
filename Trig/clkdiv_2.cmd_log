@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/yzy/ise/Trig/clkdiv_2.v -lang verilog -prj Trig -o clkdiv_2.spl -module clkdiv_2 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv_2.spl /home/yzy/ise/Trig/clkdiv_2.sym 
