@@ -6,13 +6,13 @@
 // /___/  \  /    Vendor: Xilinx 
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
-//  /   /         Filename : RS_EN.vf
+//  /   /         Filename : locker.vf
 // /___/   /\     Timestamp : 12/07/2016 13:45:43
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family kintex7 -verilog /home/yzy/ise/Trig/RS_EN.vf -w /home/yzy/ise/Trig/RS_EN.sch
-//Design Name: RS_EN
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog /home/yzy/ise/Trig/locker.vf -w /home/yzy/ise/Trig/locker.sch
+//Design Name: locker
 //Device: kintex7
 //Purpose:
 //    This verilog netlist is translated from an ECS schematic.It can be 
@@ -20,10 +20,10 @@
 //
 `timescale 1ns / 1ps
 
-module locker_MUSER_RS_EN(Rn, 
-                          Sn, 
-                          Q, 
-                          Qn);
+module locker(Rn, 
+              Sn, 
+              Q, 
+              Qn);
 
     input Rn;
     input Sn;
@@ -41,32 +41,4 @@ module locker_MUSER_RS_EN(Rn,
    NAND2  XLXI_2 (.I0(Rn), 
                  .I1(Q_DUMMY), 
                  .O(Qn_DUMMY));
-endmodule
-`timescale 1ns / 1ps
-
-module RS_EN(C, 
-             R, 
-             S, 
-             Q, 
-             Qn);
-
-    input C;
-    input R;
-    input S;
-   output Q;
-   output Qn;
-   
-   wire XLXN_4;
-   wire XLXN_5;
-   
-   locker_MUSER_RS_EN  XLXI_1 (.Rn(XLXN_5), 
-                              .Sn(XLXN_4), 
-                              .Q(Q), 
-                              .Qn(Qn));
-   NAND2  XLXI_2 (.I0(C), 
-                 .I1(S), 
-                 .O(XLXN_4));
-   NAND2  XLXI_3 (.I0(R), 
-                 .I1(C), 
-                 .O(XLXN_5));
 endmodule

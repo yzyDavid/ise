@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/yzy/ise/Trig/Top_Trigger.xst" -ofn "/home/yzy/ise/Trig/Top_Trigger.syr" 

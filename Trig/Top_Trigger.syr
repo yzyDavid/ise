@@ -15,7 +15,7 @@ Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.04 secs
  
 --> 
-Reading design: RS_Trig.prj
+Reading design: Top_Trigger.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -43,16 +43,16 @@ TABLE OF CONTENTS
 *                      Synthesis Options Summary                        *
 =========================================================================
 ---- Source Parameters
-Input File Name                    : "RS_Trig.prj"
+Input File Name                    : "Top_Trigger.prj"
 Ignore Synthesis Constraint File   : NO
 
 ---- Target Parameters
-Output File Name                   : "RS_Trig"
+Output File Name                   : "Top_Trigger"
 Output Format                      : NGC
 Target Device                      : xc7k160t-2L-ffg676
 
 ---- Source Options
-Top Module Name                    : RS_Trig
+Top Module Name                    : Top_Trigger
 Automatic FSM Extraction           : YES
 FSM Encoding Algorithm             : Auto
 Safe Implementation                : No
@@ -108,51 +108,25 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/yzy/ise/Trig/locker.vf" into library work
-Parsing module <locker>.
-Analyzing Verilog file "/home/yzy/ise/Trig/RS_EN.vf" into library work
-Parsing module <locker_MUSER_RS_EN>.
-Parsing module <RS_EN>.
-Analyzing Verilog file "/home/yzy/ise/Trig/RS_Trig.vf" into library work
-Parsing module <locker_MUSER_RS_Trig>.
-Parsing module <RS_EN_MUSER_RS_Trig>.
-Parsing module <RS_Trig>.
+Analyzing Verilog file "/home/yzy/ise/Trig/Top_Trigger.vf" into library work
+Parsing module <Top_Trigger>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating module <RS_Trig>.
-
-Elaborating module <RS_EN_MUSER_RS_Trig>.
-
-Elaborating module <locker_MUSER_RS_Trig>.
-
-Elaborating module <NAND2>.
-
-Elaborating module <INV>.
+Elaborating module <Top_Trigger>.
+WARNING:HDLCompiler:1499 - "/home/yzy/ise/Trig/Top_Trigger.vf" Line 23: Empty module <Top_Trigger> remains a black box.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
-Synthesizing Unit <RS_Trig>.
-    Related source file is "/home/yzy/ise/Trig/RS_Trig.vf".
+Synthesizing Unit <Top_Trigger>.
+    Related source file is "/home/yzy/ise/Trig/Top_Trigger.vf".
     Summary:
 	no macro.
-Unit <RS_Trig> synthesized.
-
-Synthesizing Unit <RS_EN_MUSER_RS_Trig>.
-    Related source file is "/home/yzy/ise/Trig/RS_Trig.vf".
-    Summary:
-	no macro.
-Unit <RS_EN_MUSER_RS_Trig> synthesized.
-
-Synthesizing Unit <locker_MUSER_RS_Trig>.
-    Related source file is "/home/yzy/ise/Trig/RS_Trig.vf".
-    Summary:
-	no macro.
-Unit <locker_MUSER_RS_Trig> synthesized.
+Unit <Top_Trigger> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -174,13 +148,12 @@ Found no macro
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit RS_Trig : the following signal(s) form a combinatorial loop: XLXI_2/XLXN_5, XLXN_2, Qn, Y, Q.
 
-Optimizing unit <RS_Trig> ...
+Optimizing unit <Top_Trigger> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block RS_Trig, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Top_Trigger, actual ratio is 0.
 
 Final Macro Processing ...
 
@@ -205,17 +178,10 @@ Partition Implementation Status
 *                            Design Summary                             *
 =========================================================================
 
-Top Level Output File Name         : RS_Trig.ngc
+Top Level Output File Name         : Top_Trigger.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1
-#      INV                         : 1
-# IO Buffers                       : 6
-#      IBUF                        : 3
-#      OBUF                        : 3
-# Logical                          : 8
-#      NAND2                       : 8
 
 Device utilization summary:
 ---------------------------
@@ -224,19 +190,17 @@ Selected Device : 7k160tffg676-2l
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    1  out of  101400     0%  
-    Number used as Logic:                 1  out of  101400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      1
-   Number with an unused Flip Flop:       1  out of      1   100%  
-   Number with an unused LUT:             0  out of      1     0%  
-   Number of fully used LUT-FF pairs:     0  out of      1     0%  
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                           6
- Number of bonded IOBs:                   6  out of    400     1%  
+ Number of IOs:                           0
+ Number of bonded IOBs:                   0  out of    400     0%  
 
 Specific Feature Utilization:
 
@@ -271,35 +235,11 @@ Speed Grade: -2
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 4.315ns
+   Maximum combinational path delay: No path found
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 15 / 3
--------------------------------------------------------------------------
-Delay:               4.315ns (Levels of Logic = 8)
-  Source:            C (PAD)
-  Destination:       Q (PAD)
-
-  Data Path: C to Q
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             3   0.000   0.625  C_IBUF (C_IBUF)
-     NAND2:I0->O           1   0.043   0.603  XLXI_1/XLXI_2 (XLXI_1/XLXN_4)
-     NAND2:I1->O           3   0.053   0.615  XLXI_1/XLXI_1/XLXI_1 (Y_OBUF)
-     NAND2:I1->O           2   0.053   0.618  XLXI_1/XLXI_1/XLXI_2 (XLXN_2)
-     NAND2:I0->O           1   0.043   0.613  XLXI_2/XLXI_3 (XLXI_2/XLXN_5)
-     NAND2:I0->O           2   0.043   0.618  XLXI_2/XLXI_1/XLXI_2 (Qn_OBUF)
-     NAND2:I0->O           2   0.043   0.344  XLXI_2/XLXI_1/XLXI_1 (Q_OBUF)
-     OBUF:I->O                 0.000          Q_OBUF (Q)
-    ----------------------------------------
-    Total                      4.315ns (0.278ns logic, 4.037ns route)
-                                       (6.4% logic, 93.6% route)
 
 =========================================================================
 
@@ -310,12 +250,12 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.21 secs
+Total CPU time to Xst completion: 6.19 secs
  
 --> 
 
 
-Total memory usage is 493304 kilobytes
+Total memory usage is 493288 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

@@ -1,3 +1,5 @@
 xst -intstyle ise -ifn "/home/yzy/ise/Trig/RS_Trig.xst" -ofn "/home/yzy/ise/Trig/RS_Trig.syr" 
 xst -intstyle ise -ifn "/home/yzy/ise/Trig/RS_Trig.xst" -ofn "/home/yzy/ise/Trig/RS_Trig.syr" 
 xst -intstyle ise -ifn "/home/yzy/ise/Trig/RS_Trig.xst" -ofn "/home/yzy/ise/Trig/RS_Trig.syr" 
+xst -intstyle ise -ifn "/home/yzy/ise/Trig/RS_Trig.xst" -ofn "/home/yzy/ise/Trig/RS_Trig.syr" 
+xst -intstyle ise -ifn "/home/yzy/ise/Trig/RS_Trig.xst" -ofn "/home/yzy/ise/Trig/RS_Trig.syr" 

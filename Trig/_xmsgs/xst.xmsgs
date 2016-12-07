@@ -5,10 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1654" delta="old" >"/home/yzy/ise/Trig/RS_Trig.vf" Line 42: Instantiating &lt;<arg fmt="%s" index="1">XLXI_1</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">RS_EN</arg>&gt;
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/yzy/ise/Trig/RS_Trig.vf" Line 23: Empty module &lt;<arg fmt="%s" index="1">RS_Trig</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/home/yzy/ise/Trig/Top_Trigger.vf" Line 23: Empty module &lt;<arg fmt="%s" index="1">Top_Trigger</arg>&gt; remains a black box.
 </msg>
 
 </messages>

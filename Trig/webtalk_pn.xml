@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Tue Dec  6 21:56:20 2016">
+<application name="pn" timeStamp="Wed Dec  7 13:56:17 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="EC4A59F207655AAEFB5CA3A60048A196" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
@@ -26,7 +26,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_intWbtProjectID" value="EC4A59F207655AAEFB5CA3A60048A196" type="design"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
-<property name="PROP_AutoTop" value="true" type="design"/>
+<property name="PROP_AutoTop" value="false" type="design"/>
 <property name="PROP_DevFamily" value="Kintex7" type="design"/>
 <property name="PROP_DevDevice" value="xc7k160t" type="design"/>
 <property name="PROP_DevFamilyPMName" value="kintex7" type="design"/>
@@ -34,7 +34,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-2L" type="design"/>
 <property name="PROP_PreferredLanguage" value="Verilog" type="design"/>
-<property name="FILE_SCHEMATIC" value="2" type="source"/>
+<property name="FILE_SCHEMATIC" value="7" type="source"/>
 </section>
 </application>
 </document>
