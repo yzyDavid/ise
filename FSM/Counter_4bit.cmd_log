@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/yzy/ise/FSM/Counter_4bit.xst" -ofn "/home/yzy/ise/FSM/Counter_4bit.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym Counter_4bit /home/yzy/ise/FSM/code/Counter_4bit.sch /home/yzy/ise/FSM/Counter_4bit.sym 
+xst -intstyle ise -ifn "/home/yzy/ise/FSM/Counter_4bit.xst" -ofn "/home/yzy/ise/FSM/Counter_4bit.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym Counter_4bit /home/yzy/ise/FSM/code/Counter_4bit.sch /home/yzy/ise/FSM/Counter_4bit.sym 

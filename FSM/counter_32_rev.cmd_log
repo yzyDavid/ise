@@ -1,0 +1,5 @@
+vhdtdtfi -lib work /home/yzy/ise/FSM/counter_32_rev.v -lang verilog -prj FSM -o counter_32_rev.spl -module counter_32_rev -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 counter_32_rev.spl /home/yzy/ise/FSM/counter_32_rev.sym 
+vhdtdtfi -lang verilog -prj FSM -o /home/yzy/ise/FSM/counter_32_rev.tfi -lib work /home/yzy/ise/FSM//counter_32_rev.v -module counter_32_rev -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work /home/yzy/ise/FSM/counter_32_rev.v -lang verilog -prj FSM -o counter_32_rev.spl -module counter_32_rev -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 counter_32_rev.spl /home/yzy/ise/FSM/counter_32_rev.sym 

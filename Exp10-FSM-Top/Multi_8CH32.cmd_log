@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/3150104945/Framework/Multi_8CH32.v -lang verilog -prj Framework -o Multi_8CH32.spl -module Multi_8CH32 -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Multi_8CH32.spl E:/3150104945/Framework/Multi_8CH32.sym 

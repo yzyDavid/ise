@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MUX2T1_64_drc.vf
+// /___/   /\     Timestamp : 11/17/2016 20:24:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog MUX2T1_64_drc.vf -w E:/3150104945/Framework/MUX2T1_64.sch
+//Design Name: MUX2T1_64
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MUX2T1_64(a, 
+                 b, 
+                 sel, 
+                 o);
+
+    input [63:0] a;
+    input [63:0] b;
+    input sel;
+   output [63:0] o;
+   
+   wire [2:0] s;
+   
+   MUX8T1_32  XLXI_1 (.I0(b[31:0]), 
+                     .I1(a[31:0]), 
+                     .I2(), 
+                     .I3(), 
+                     .I4(), 
+                     .I5(), 
+                     .I6(), 
+                     .I7(), 
+                     .s(s[2:0]), 
+                     .o(o[31:0]));
+   MUX8T1_32  XLXI_2 (.I0(b[63:32]), 
+                     .I1(a[63:32]), 
+                     .I2(), 
+                     .I3(), 
+                     .I4(), 
+                     .I5(), 
+                     .I6(), 
+                     .I7(), 
+                     .s(s[2:0]), 
+                     .o(o[63:32]));
+   BUF  XLXI_3 (.I(sel), 
+               .O(s[0]));
+   GND  XLXI_4 (.G(s[2]));
+   GND  XLXI_5 (.G(s[1]));
+endmodule

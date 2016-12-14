@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/3150104945/Framework/Sseg_map.v -lang verilog -prj Framework -o Sseg_map.spl -module Sseg_map -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Sseg_map.spl E:/3150104945/Framework/Sseg_map.sym 

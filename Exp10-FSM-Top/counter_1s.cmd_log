@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/yzy/ise/Exp10-FSM-Top/counter_1s.v -lang verilog -prj Framework -o counter_1s.spl -module counter_1s -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 counter_1s.spl /home/yzy/ise/Exp10-FSM-Top/counter_1s.sym 

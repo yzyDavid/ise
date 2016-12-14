@@ -1,1 +1,4 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/yzy/ise/Trig/D_Trig.vf,-w,/home/yzy/ise/Trig/D_Trig.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/yzy/ise/Trig/MB_DFF.vf,-w,/home/yzy/ise/Trig/MB_DFF.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/yzy/ise/Trig/Top_Trigger.vf,-w,/home/yzy/ise/Trig/Top_Trigger.sch
 sch2hdl,-intstyle,ise,-family,kintex7,-verilog,/home/yzy/ise/Trig/Top_Trigger.vf,-w,/home/yzy/ise/Trig/Top_Trigger.sch

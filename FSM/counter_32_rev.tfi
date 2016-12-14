@@ -1,0 +1,14 @@
+
+
+
+// Instantiate the module
+counter_32_rev instance_name (
+    .clk(clk), 
+    .s(s), 
+    .Load(Load), 
+    .PData(PData), 
+    .cnt(cnt), 
+    .Rc(Rc)
+    );
+
+

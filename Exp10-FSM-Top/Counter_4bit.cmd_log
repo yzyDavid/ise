@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family kintex7 -refsym Counter_4bit /home/yzy/ise/Exp10-FSM-Top/Counter_4bit.sch /home/yzy/ise/Exp10-FSM-Top/Counter_4bit.sym 

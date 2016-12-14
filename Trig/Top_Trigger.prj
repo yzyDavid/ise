@@ -1,1 +1,8 @@
+verilog work "locker.vf"
+verilog work "RS_EN.vf"
+verilog work "D_EN.vf"
+verilog work "RS_Trig.vf"
+verilog work "MB_DFF.vf"
+verilog work "D_Trig.vf"
+verilog work "clkdiv_2.v"
 verilog work "Top_Trigger.vf"
